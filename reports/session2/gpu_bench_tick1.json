@@ -1,0 +1,28 @@
+{
+  "generated_utc": "2026-07-10T11:16:12Z",
+  "gpu": {
+    "name": "NVIDIA A100-SXM4-80GB",
+    "memory_total_mib": 81920,
+    "temperature_c": 33,
+    "utilization_pct": 0
+  },
+  "torch": {
+    "cuda_available": true,
+    "device_name": "NVIDIA A100-SXM4-80GB",
+    "cuda_version": "11.8"
+  },
+  "matmul_4096_x20": {
+    "seconds": 0.2286076545715332,
+    "approx_gflops": 12024.002759627127
+  },
+  "train_run": {
+    "script": "scripts/train_stub.py",
+    "device": "cuda",
+    "seed": 42,
+    "size": 2048,
+    "steps": 100,
+    "final_loss": 4.572897911071777,
+    "mean_step_s": 0.0029026007652282713,
+    "log": "/data/NEXUS/logs/train_runs/run_seed42_size2048_steps100.jsonl"
+  }
+}
