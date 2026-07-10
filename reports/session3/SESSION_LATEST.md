@@ -1,4 +1,4 @@
-# session3 tick 12 @ 20260710T181004Z
+# session3 tick 13 @ 20260710T181020Z
 - host: nb-582b5f51afb6b085773ce464c2654850-0
 - gpu: GPU 0: NVIDIA A100-SXM4-80GB (UUID: GPU-a4d58e91-84d1-f5cd-38ff-49500089c75c)
 - df: JuiceFS:discovery-prod   30G  578M   30G   2% /data
@@ -6,19 +6,19 @@
 ## train
 ```
 {
-  "stamp": "20260710T181004Z",
+  "stamp": "20260710T181020Z",
   "device": "cuda",
   "name": "NVIDIA A100-SXM4-80GB",
   "steps": 120,
   "size": 2048,
-  "seed": 52,
-  "sec": 0.44031715393066406,
-  "sec_per_step": 0.0036693096160888674,
-  "loss_start": 1.0004041194915771,
-  "loss_end": 0.09145926684141159,
+  "seed": 53,
+  "sec": 0.41323256492614746,
+  "sec_per_step": 0.0034436047077178954,
+  "loss_start": 1.0002962350845337,
+  "loss_end": 0.09144432097673416,
   "torch": "2.4.0+cu124",
   "gpu_line": "GPU 0: NVIDIA A100-SXM4-80GB (UUID: GPU-a4d58e91-84d1-f5cd-38ff-49500089c75c)",
-  "tick": 12,
+  "tick": 13,
   "session": "session3"
 }
 ```
@@ -33,18 +33,18 @@
       "op": "matmul",
       "n": 2048,
       "reps": 8,
-      "dt_s": 0.007916450500488281,
-      "gflops": 17361.183962878673
+      "dt_s": 0.007979869842529297,
+      "gflops": 17223.207418686092
     },
     {
       "op": "matmul",
       "n": 4096,
       "reps": 4,
-      "dt_s": 0.029163360595703125,
-      "gflops": 18850.907531178007
+      "dt_s": 0.02921319007873535,
+      "gflops": 18818.753186704325
     }
   ],
-  "stamp": "20260710T181004Z",
-  "tick": 12
+  "stamp": "20260710T181020Z",
+  "tick": 13
 }
 ```
