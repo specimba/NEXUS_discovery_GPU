@@ -1,6 +1,6 @@
 {
-  "stamp": "20260711T140859Z",
-  "tick": 1,
+  "stamp": "20260711T141753Z",
+  "tick": 2,
   "venue": "A800_scientist_v0.1",
   "cwd": "/home/mw/project",
   "train_steps": 500,
@@ -12,24 +12,24 @@
   "cuda": true,
   "gpu_name": "NVIDIA A800-SXM4-80GB",
   "train": {
-    "sec": 0.692,
+    "sec": 0.465,
     "steps": 500,
     "loss_curve": [
-      8.304018020629883,
-      8.346102714538574,
-      8.340436935424805,
-      8.313231468200684,
-      8.303485870361328,
-      8.340415000915527,
-      8.323649406433105,
-      8.381441116333008,
-      8.325175285339355,
-      8.358162879943848,
-      8.30548095703125
+      8.31926441192627,
+      8.34288215637207,
+      8.350895881652832,
+      8.343244552612305,
+      8.396341323852539,
+      8.3638334274292,
+      8.334280014038086,
+      8.36159610748291,
+      8.35650634765625,
+      8.308140754699707,
+      8.266488075256348
     ],
     "device": "cuda"
   },
-  "ckpt": "/home/mw/project/NEXUS_session4/checkpoints/tinylm_a800_t1_20260711T140859Z.pt",
+  "ckpt": "/home/mw/project/NEXUS_session4/checkpoints/tinylm_a800_t2_20260711T141753Z.pt",
   "/home/mw/project": {
     "exists": true,
     "n": 2,
@@ -69,5 +69,5 @@
     "train_and_stress.py": "ok",
     "README.md": "ok"
   },
-  "suite_err": "Command '['python3', '/home/mw/project/NEXUS_session4/scripts/nexus_cloud_suite/run_suite.py']' timed out after 180 seconds"
+  "suite_err": "Command '['python3', '/home/mw/project/NEXUS_session4/scripts/nexus_cloud_suite/run_suite.py']' timed out after 90 seconds"
 }
