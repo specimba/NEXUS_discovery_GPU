@@ -1,14 +1,14 @@
 {
-  "stamp": "2026-07-11T09:53:42.678Z",
-  "check": 10,
+  "stamp": "2026-07-11T10:01:43.951Z",
+  "check": 11,
   "pid": 93940,
   "alive": true,
   "cdp_ok": true,
-  "minutes_left": "47.7",
+  "minutes_left": "39.7",
   "last_log": [
-    "{\"ts\":\"2026-07-11T09:49:55.406Z\",\"phase\":\"shot\",\"n\":6}",
-    "{\"ts\":\"2026-07-11T09:49:56.074Z\",\"phase\":\"gh_suite\",\"sha\":\"4104c39\",\"msg\":\"afk heartbeat check 9\"}",
-    "{\"ts\":\"2026-07-11T09:49:56.075Z\",\"phase\":\"sleep\",\"sec\":600,\"nextPhase\":7}"
+    "{\"ts\":\"2026-07-11T10:00:04.089Z\",\"phase\":\"type\",\"head\":\"ls -la /data/NEXUS/checkpoints/cloud_suite 2>/dev/null | tail -10\"}",
+    "{\"ts\":\"2026-07-11T10:00:04.260Z\",\"phase\":\"type\",\"head\":\"echo REALWORK_PHASE_7_DONE\"}",
+    "{\"ts\":\"2026-07-11T10:00:04.432Z\",\"phase\":\"type\",\"head\":\"unset T HF_TOKEN HUGGING_FACE_HUB_TOKEN\"}"
   ],
   "note": "AFK monitor heartbeat — no secrets"
 }
