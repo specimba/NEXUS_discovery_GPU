@@ -18,6 +18,14 @@
 - Driver: `intern_s4_a800_go.mjs` — A800_HOURS=6, PHASE_SEC=900, TRAIN_STEPS=500
 - Outputs: `/home/mw/project/NEXUS_session4/reports/a800/` + GH `reports/session4/a800/`
 
+## Tick 1 durable proof (GH)
+- Files: `A800_TICK_1_20260711T140859Z.json`, `LATEST.json`, `A800_STATUS.md`
+- GPU: **NVIDIA A800-SXM4-80GB** · torch 2.6.0+cu124 · `cuda: true`
+- TinyLM train: **500 steps in 0.692s** on `cuda`
+- ckpt: `/home/mw/project/NEXUS_session4/checkpoints/tinylm_a800_t1_20260711T140859Z.pt`
+- TokenHD scaffold written; suite scripts pulled OK (suite run timed out 180s — non-blocking for GPU proof)
+- Host: `klab`
+
 ## Do not
 - Thrash Cline / type into extensions
 - Trust historical body text for DONE without unique stamp
