@@ -1,6 +1,6 @@
 {
-  "stamp": "20260711T233202Z",
-  "tick": 68,
+  "stamp": "20260711T233552Z",
+  "tick": 69,
   "venue": "A800_scientist_v0.1",
   "cwd": "/home/mw/project",
   "train_steps": 500,
@@ -15,21 +15,21 @@
     "sec": 0.485,
     "steps": 500,
     "loss_curve": [
-      8.326478004455566,
-      8.303825378417969,
-      8.317390441894531,
-      8.32448959350586,
-      8.31755256652832,
-      8.314008712768555,
-      8.301974296569824,
-      8.374363899230957,
-      8.316800117492676,
-      8.314057350158691,
-      8.354979515075684
+      8.316834449768066,
+      8.333402633666992,
+      8.330574035644531,
+      8.356409072875977,
+      8.267380714416504,
+      8.364137649536133,
+      8.317227363586426,
+      8.333855628967285,
+      8.34862232208252,
+      8.3163423538208,
+      8.35286808013916
     ],
     "device": "cuda"
   },
-  "ckpt": "/home/mw/project/NEXUS_session4/checkpoints/tinylm_a800_t68_20260711T233202Z.pt",
+  "ckpt": "/home/mw/project/NEXUS_session4/checkpoints/tinylm_a800_t69_20260711T233552Z.pt",
   "/home/mw/project": {
     "exists": true,
     "n": 2,
@@ -63,14 +63,5 @@
     "stub": "/home/mw/project/NEXUS_session4/tokenhd/train_tokenhd_stub.py",
     "note": "scaffold only; full 0.6B after F-2"
   },
-  "gh_upload": "ec95600",
-  "gh_latest": "7a2e295",
-  "suite_pull": {
-    "run_suite.py": "ok",
-    "hf_dataset_deep_search.py": "ok",
-    "build_nexus_sft_mix.py": "ok",
-    "train_and_stress.py": "ok",
-    "README.md": "ok"
-  },
-  "suite_err": "Command '['python3', '/home/mw/project/NEXUS_session4/scripts/nexus_cloud_suite/run_suite.py']' timed out after 45 seconds"
+  "gh_upload": "f1c05f7"
 }
