@@ -1,11 +1,11 @@
 {
-  "stamp": "20260711T174236Z",
+  "stamp": "20260711T174322Z",
   "tick": 15,
   "mode": "data_gravity",
   "venue": "A800_scientist_v0.1",
   "hf_set": true,
   "token_set": true,
-  "priority": "P0_labels_then_P1_jewels",
+  "hf_endpoint": "https://hf-mirror.com",
   "host": "klab",
   "hub_ver": "1.23.0",
   "pulls": {
@@ -13,65 +13,65 @@
       "ok": false,
       "kind": "tokenhd",
       "err": "Got: ConnectError: [Errno 101] Network is unreachable\nAn error happened while trying to locate the files on the Hub, and we cannot find the appropriate snapshot folder for the specified revision on th",
-      "sec": 0.01
+      "sec": 132.02
     },
     "Ivan1008/toolace-hallucination-spans": {
       "ok": false,
       "kind": "tokenhd",
       "err": "Got: ConnectError: [Errno 101] Network is unreachable\nAn error happened while trying to locate the files on the Hub, and we cannot find the appropriate snapshot folder for the specified revision on th",
-      "sec": 0.01
+      "sec": 131.07
     },
     "marrita/toolace-tool-calling-hallucination-ragtruth": {
       "ok": false,
       "kind": "tokenhd",
       "err": "Got: ConnectError: [Errno 101] Network is unreachable\nAn error happened while trying to locate the files on the Hub, and we cannot find the appropriate snapshot folder for the specified revision on th",
-      "sec": 0.01
+      "sec": 131.07
     },
     "wandb/RAGTruth-processed": {
       "ok": false,
       "kind": "tokenhd",
       "err": "Got: ConnectError: [Errno 101] Network is unreachable\nAn error happened while trying to locate the files on the Hub, and we cannot find the appropriate snapshot folder for the specified revision on th",
-      "sec": 0.01
+      "sec": 131.07
     },
     "nvidia/When2Call": {
       "ok": false,
       "kind": "tool",
       "err": "Got: ConnectError: [Errno 101] Network is unreachable\nAn error happened while trying to locate the files on the Hub, and we cannot find the appropriate snapshot folder for the specified revision on th",
-      "sec": 0.01
+      "sec": 131.07
     },
     "lockon/xlam-function-calling-60k": {
       "ok": false,
       "kind": "tool",
       "err": "Got: ConnectError: [Errno 101] Network is unreachable\nAn error happened while trying to locate the files on the Hub, and we cannot find the appropriate snapshot folder for the specified revision on th",
-      "sec": 0.01
+      "sec": 131.07
     },
     "lockon/ToolACE": {
       "ok": false,
       "kind": "tool",
       "err": "Got: ConnectError: [Errno 101] Network is unreachable\nAn error happened while trying to locate the files on the Hub, and we cannot find the appropriate snapshot folder for the specified revision on th",
-      "sec": 0.01
+      "sec": 131.07
     },
     "MadeAgents/xlam-irrelevance-7.5k": {
       "ok": false,
       "kind": "tool",
       "err": "Got: ConnectError: [Errno 101] Network is unreachable\nAn error happened while trying to locate the files on the Hub, and we cannot find the appropriate snapshot folder for the specified revision on th",
-      "sec": 0.01
+      "sec": 131.07
     },
     "Salesforce/xlam-function-calling-60k": {
       "ok": false,
       "kind": "tool",
       "err": "Got: ConnectError: [Errno 101] Network is unreachable\nAn error happened while trying to locate the files on the Hub, and we cannot find the appropriate snapshot folder for the specified revision on th",
-      "sec": 0.01
+      "sec": 131.07
     }
   },
   "pull_ok": 0,
   "pull_fail": 9,
   "cuda": true,
   "gpu_name": "NVIDIA A800-SXM4-80GB",
-  "matmul_sec": 0.0089,
+  "matmul_sec": 0.0013,
   "disk": {
     "total": 11258999068426240,
-    "used": 18374063030272,
-    "free": 11240625005395968
+    "used": 18374223462400,
+    "free": 11240624844963840
   }
 }
