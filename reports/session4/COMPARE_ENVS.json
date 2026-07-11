@@ -1,0 +1,130 @@
+{
+  "ts": "2026-07-11T04:51:33.024Z",
+  "compare": {
+    "notebook": {
+      "url": "https://discovery.intern-ai.org.cn/notebooks/run/6a4bd98342108cc3a0ec0d68?label=68385b6a4f2a9bd80fcbcc33&image=6a396956e",
+      "nFrames": 3,
+      "hits": [
+        {
+          "frame": "AA196CA065DBE7E55FCCF8439BA6C32B",
+          "title": "NEXUS_scientist_v0.1",
+          "bodyLen": 1966,
+          "head": "document edit Check run Kernel Mirror release help guide NEXUS_scientist_v0.1 save Generate version 0.0h used Notebook Protein Folding and Visualization - 1618 Notebook-python3-7",
+          "hasJupyter": true,
+          "hasMonaco": true,
+          "hasXterm": false,
+          "hasCline": false,
+          "hasKilo": false,
+          "hasA800": false,
+          "hasA100": false,
+          "hasNoLimit": false,
+          "hasProjectDirs": true,
+          "hasGpu": false
+        },
+        {
+          "frame": "01B4185755F320AFA4F9B4017E98683B",
+          "title": "调试-蛋白质折叠与可视化 - Notebook Viewer",
+          "bodyLen": 57519,
+          "head": " Notebook pre { line-height: 125%; } td.linenos .normal { color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px; } span.linenos { color: inh",
+          "hasJupyter": true,
+          "hasMonaco": false,
+          "hasXterm": false,
+          "hasCline": false,
+          "hasKilo": false,
+          "hasA800": false,
+          "hasA100": false,
+          "hasNoLimit": false,
+          "hasProjectDirs": true,
+          "hasGpu": true
+        }
+      ]
+    },
+    "vscode": {
+      "url": "https://d.intern-ai.org.cn/workbench/dev-machine/inside/55/nb-582b5f51afb6b085773ce464c2654850",
+      "nFrames": 21,
+      "hits": [
+        {
+          "frame": "76AAE6589DA01D7E52B5CA96A5B091B0",
+          "title": "",
+          "bodyLen": 65,
+          "head": "CPU：4000m vCPU 4.4% 内存：16G 8.1% GPU：Nvidia A100 * 1 0% 显存：80Gi 0%",
+          "hasJupyter": false,
+          "hasMonaco": false,
+          "hasXterm": false,
+          "hasCline": false,
+          "hasKilo": false,
+          "hasA800": false,
+          "hasA100": true,
+          "hasNoLimit": false,
+          "hasProjectDirs": false,
+          "hasGpu": true
+        },
+        {
+          "frame": "4B08B2672344B2978770DD6D28F1FD46",
+          "title": "Project collaborati... - root - code-server",
+          "bodyLen": 1366,
+          "head": "root 1 CLINE Project collaborati... .bashrc .bashrc 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 # ~/.bashrc: executed by bash(1) for non-login shells. # se",
+          "hasJupyter": false,
+          "hasMonaco": true,
+          "hasXterm": true,
+          "hasCline": true,
+          "hasKilo": false,
+          "hasA800": false,
+          "hasA100": false,
+          "hasNoLimit": false,
+          "hasProjectDirs": true,
+          "hasGpu": false
+        },
+        {
+          "frame": "B4C7DC010F1497665E05EB1805CF76ED",
+          "title": "",
+          "bodyLen": 5018,
+          "head": " (function () { const searchParams = new URL(document.location.href).searchParams; const vscodeWebWorkerExtHostId = searchParams.get('vscodeWebWorkerExtHostId') || ''; // DO N",
+          "hasJupyter": false,
+          "hasMonaco": false,
+          "hasXterm": false,
+          "hasCline": false,
+          "hasKilo": false,
+          "hasA800": false,
+          "hasA100": false,
+          "hasNoLimit": false,
+          "hasProjectDirs": false,
+          "hasGpu": false
+        },
+        {
+          "frame": "active-frame",
+          "title": "Cline",
+          "bodyLen": 7326,
+          "head": "$0.0000 Lets continue our project together 16.8k 1.0m 1/3 Understand the project context Thinking Cline wants to execute this command: Completed ls -la /root /home/jovyan 2>&1; fin",
+          "hasJupyter": false,
+          "hasMonaco": false,
+          "hasXterm": false,
+          "hasCline": true,
+          "hasKilo": true,
+          "hasA800": false,
+          "hasA100": false,
+          "hasNoLimit": false,
+          "hasProjectDirs": true,
+          "hasGpu": false
+        },
+        {
+          "frame": "active-frame",
+          "title": "Kilo Code",
+          "bodyLen": 689,
+          "head": "Project collaboration kickoff 5% 12.6K 262.1K Tokens 12.6K 188 cache 12.0K Lets continue our project together Queued Queued Reasoning I don't have context about our previous work.",
+          "hasJupyter": false,
+          "hasMonaco": false,
+          "hasXterm": false,
+          "hasCline": false,
+          "hasKilo": true,
+          "hasA800": false,
+          "hasA100": false,
+          "hasNoLimit": false,
+          "hasProjectDirs": true,
+          "hasGpu": false
+        }
+      ]
+    }
+  },
+  "note": "A800 scientist notebook vs workbench VS Code shell"
+}
