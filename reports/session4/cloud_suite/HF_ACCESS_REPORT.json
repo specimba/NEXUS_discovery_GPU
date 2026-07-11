@@ -1,0 +1,96 @@
+{
+  "user": "specimba",
+  "token_used": true,
+  "items": [
+    {
+      "kind": "dataset",
+      "id": "Salesforce/xlam-function-calling-60k",
+      "meta_http": 200,
+      "gated": "auto",
+      "tree_http": 200,
+      "access": "ok",
+      "expect_gate": true,
+      "action_needed": false
+    },
+    {
+      "kind": "dataset",
+      "id": "glaiveai/glaive-function-calling-v2",
+      "meta_http": 200,
+      "gated": false,
+      "tree_http": 200,
+      "access": "ok",
+      "expect_gate": false,
+      "action_needed": false
+    },
+    {
+      "kind": "dataset",
+      "id": "HuggingFaceH4/ultrachat_200k",
+      "meta_http": 200,
+      "gated": false,
+      "tree_http": 200,
+      "access": "ok",
+      "expect_gate": false,
+      "action_needed": false
+    },
+    {
+      "kind": "dataset",
+      "id": "openbmb/UltraInteract_sft",
+      "meta_http": 200,
+      "gated": false,
+      "tree_http": 200,
+      "access": "ok",
+      "expect_gate": false,
+      "action_needed": false
+    },
+    {
+      "kind": "dataset",
+      "id": "NousResearch/hermes-function-calling-v1",
+      "meta_http": 200,
+      "gated": false,
+      "tree_http": 200,
+      "access": "ok",
+      "expect_gate": false,
+      "action_needed": false
+    },
+    {
+      "kind": "model",
+      "id": "meta-llama/Meta-Llama-3.1-8B-Instruct",
+      "meta_http": 200,
+      "gated": "manual",
+      "tree_http": 200,
+      "access": "ok",
+      "expect_gate": true,
+      "action_needed": false
+    },
+    {
+      "kind": "model",
+      "id": "meta-llama/Llama-3.2-1B-Instruct",
+      "meta_http": 200,
+      "gated": "manual",
+      "tree_http": 200,
+      "access": "ok",
+      "expect_gate": true,
+      "action_needed": false
+    },
+    {
+      "kind": "model",
+      "id": "Qwen/Qwen2.5-0.5B-Instruct",
+      "meta_http": 200,
+      "gated": false,
+      "tree_http": 200,
+      "access": "ok",
+      "expect_gate": false,
+      "action_needed": false
+    },
+    {
+      "kind": "model",
+      "id": "microsoft/phi-2",
+      "meta_http": 200,
+      "gated": false,
+      "tree_http": 200,
+      "access": "ok",
+      "expect_gate": false,
+      "action_needed": false
+    }
+  ]
+}
