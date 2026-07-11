@@ -1,0 +1,16 @@
+{
+  "stamp": "20260711T060709Z",
+  "device": "cuda",
+  "name": "NVIDIA A100-SXM4-80GB",
+  "steps": 120,
+  "size": 2048,
+  "seed": 55,
+  "sec": 0.42226552963256836,
+  "sec_per_step": 0.0035188794136047363,
+  "loss_start": 0.9995973110198975,
+  "loss_end": 0.09138251841068268,
+  "torch": "2.4.0+cu124",
+  "gpu_line": "GPU 0: NVIDIA A100-SXM4-80GB (UUID: GPU-fd19a280-2436-eec0-07e0-532be7533df7)",
+  "tick": 15,
+  "session": "session4"
+}
