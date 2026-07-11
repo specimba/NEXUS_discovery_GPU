@@ -1,11 +1,11 @@
 {
-  "stamp": "20260711T125455Z",
-  "tick": 13,
+  "stamp": "20260711T201754Z",
+  "tick": 22,
   "session": "session4",
-  "gpu_line": "GPU 0: NVIDIA A100-SXM4-80GB (UUID: GPU-8206e835-916e-e18a-f4be-8f2718d767f0)",
-  "torch": "2.4.0+cu124",
+  "gpu_line": "GPU 0: NVIDIA A800-SXM4-80GB (UUID: GPU-3df8ec45-ea04-9bde-3b6c-5c85409e9372)",
+  "torch": "2.6.0+cu124",
   "cuda": true,
-  "device_name": "NVIDIA A100-SXM4-80GB",
+  "device_name": "NVIDIA A800-SXM4-80GB",
   "edge_cases": {
     "empty_tensor_ok": [
       0,
@@ -13,45 +13,45 @@
     ],
     "nan_detected": true,
     "matmul_256": {
-      "sec": 0.06970024108886719,
-      "gflops": 0.4814105586409435,
+      "sec": 0.07060027122497559,
+      "gflops": 0.47527341492889,
       "finite": true
     },
     "matmul_512": {
-      "sec": 0.00017189979553222656,
-      "gflops": 1561.5810081035008,
+      "sec": 0.00017309188842773438,
+      "gflops": 1550.8263179650469,
       "finite": true
     },
     "matmul_1024": {
-      "sec": 0.000392913818359375,
-      "gflops": 5465.533528362252,
+      "sec": 0.00041413307189941406,
+      "gflops": 5185.49179892976,
       "finite": true
     },
     "matmul_2048": {
-      "sec": 0.0013647079467773438,
-      "gflops": 12588.678203691114,
+      "sec": 0.0013642311096191406,
+      "gflops": 12593.07830093113,
       "finite": true
     }
   },
   "train": {
-    "steps": 300,
-    "sec": 2.525336742401123,
-    "loss_start": 8.623123168945312,
-    "loss_end": 0.4979763627052307,
+    "steps": 500,
+    "sec": 3.588330030441284,
+    "loss_start": 8.585929870605469,
+    "loss_end": 0.4724299907684326,
     "aborted": null,
     "params": 4209664
   },
   "bench": {
-    "fwd_20x_b8_t64_sec": 0.02057170867919922
+    "fwd_20x_b8_t64_sec": 0.01936054229736328
   },
   "merge_dry": {
-    "ema_l2_sum": 5.376704371013235e-15,
+    "ema_l2_sum": 5.1465661726345306e-15,
     "method": "ema_0.9_shadow"
   },
   "mix_meta": {
-    "n_samples": 163,
-    "stamp": "20260711T125453Z",
-    "path": "/data/NEXUS/datasets/nexus_mix/sft_mix_20260711T125453Z.jsonl"
+    "n_samples": 3,
+    "stamp": "20260711T201752Z",
+    "path": "/home/mw/project/NEXUS_session4/datasets/nexus_mix/sft_mix_20260711T201752Z.jsonl"
   },
-  "checkpoint": "/data/NEXUS/checkpoints/cloud_suite/tinylm_tick13_20260711T125455Z.pt"
+  "checkpoint": "/home/mw/project/NEXUS_session4/checkpoints/cloud_suite/tinylm_tick22_20260711T201754Z.pt"
 }
