@@ -1,10 +1,10 @@
 {
-  "stamp": "2026-07-11T10:17:47.404Z",
-  "check": 13,
+  "stamp": "2026-07-11T10:25:48.850Z",
+  "check": 14,
   "pid": 93940,
   "alive": true,
   "cdp_ok": true,
-  "minutes_left": "23.7",
+  "minutes_left": "15.6",
   "last_log": [
     "{\"ts\":\"2026-07-11T10:16:08.874Z\",\"phase\":\"shot\",\"n\":8}",
     "{\"ts\":\"2026-07-11T10:16:09.389Z\",\"phase\":\"gh_suite\",\"sha\":\"b8540a3\",\"msg\":\"afk heartbeat check 12\"}",
