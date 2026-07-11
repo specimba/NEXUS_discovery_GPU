@@ -1,0 +1,12 @@
+{
+  "stamp": "20260711T075633Z",
+  "path": "/data/NEXUS/datasets/nexus_mix/sft_mix_20260711T075633Z.jsonl",
+  "n_samples": 3,
+  "stats": {
+    "files": 8,
+    "rows_read": 600,
+    "kept": 0,
+    "sources": {}
+  },
+  "seed": 42
+}
