@@ -1,0 +1,9 @@
+{
+  "event": "afk_session_start",
+  "hours": 2,
+  "mode": "no_touch_observation",
+  "hf": true,
+  "drive": "disconnected",
+  "pipeline": "realwork+afk_monitor",
+  "stamp": "20260711T084150Z"
+}
