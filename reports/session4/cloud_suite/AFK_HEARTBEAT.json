@@ -1,14 +1,14 @@
 {
-  "stamp": "2026-07-11T09:29:36.095Z",
-  "check": 7,
+  "stamp": "2026-07-11T09:37:39.971Z",
+  "check": 8,
   "pid": 93940,
   "alive": true,
   "cdp_ok": true,
-  "minutes_left": "71.8",
+  "minutes_left": "63.8",
   "last_log": [
-    "{\"ts\":\"2026-07-11T09:23:46.609Z\",\"phase\":\"shot\",\"n\":4}",
-    "{\"ts\":\"2026-07-11T09:23:47.225Z\",\"phase\":\"gh_suite\",\"sha\":\"c1fbc0a\",\"msg\":\"afk heartbeat check 6\"}",
-    "{\"ts\":\"2026-07-11T09:23:47.226Z\",\"phase\":\"sleep\",\"sec\":600,\"nextPhase\":5}"
+    "{\"ts\":\"2026-07-11T09:36:51.204Z\",\"phase\":\"shot\",\"n\":5}",
+    "{\"ts\":\"2026-07-11T09:36:51.713Z\",\"phase\":\"gh_suite\",\"sha\":\"216a960\",\"msg\":\"afk heartbeat check 7\"}",
+    "{\"ts\":\"2026-07-11T09:36:51.713Z\",\"phase\":\"sleep\",\"sec\":600,\"nextPhase\":6}"
   ],
   "note": "AFK monitor heartbeat — no secrets"
 }
