@@ -1,5 +1,5 @@
 {
-  "stamp": "20260711T075634Z",
+  "stamp": "20260711T080359Z",
   "tick": 33,
   "session": "session4",
   "gpu_line": "GPU 0: NVIDIA A100-SXM4-80GB (UUID: GPU-fd19a280-2436-eec0-07e0-532be7533df7)",
@@ -13,45 +13,45 @@
     ],
     "nan_detected": true,
     "matmul_256": {
-      "sec": 0.06871199607849121,
-      "gflops": 0.48833440905529857,
+      "sec": 0.07078337669372559,
+      "gflops": 0.47404395731483023,
       "finite": true
     },
     "matmul_512": {
-      "sec": 0.00015020370483398438,
-      "gflops": 1787.1427092740064,
+      "sec": 0.0002009868621826172,
+      "gflops": 1335.5870781051294,
       "finite": true
     },
     "matmul_1024": {
-      "sec": 0.0003693103790283203,
-      "gflops": 5814.847808096186,
+      "sec": 0.0004048347473144531,
+      "gflops": 5304.593200671962,
       "finite": true
     },
     "matmul_2048": {
-      "sec": 0.001354217529296875,
-      "gflops": 12686.196133438018,
+      "sec": 0.0013682842254638672,
+      "gflops": 12555.775228772945,
       "finite": true
     }
   },
   "train": {
-    "steps": 100,
-    "sec": 0.9510748386383057,
-    "loss_start": 8.572915077209473,
-    "loss_end": 0.11158230155706406,
+    "steps": 80,
+    "sec": 0.8240721225738525,
+    "loss_start": 8.550541877746582,
+    "loss_end": 0.640695333480835,
     "aborted": null,
     "params": 4209664
   },
   "bench": {
-    "fwd_20x_b8_t64_sec": 0.018146991729736328
+    "fwd_20x_b8_t64_sec": 0.018947601318359375
   },
   "merge_dry": {
-    "ema_l2_sum": 4.5403657977301025e-15,
+    "ema_l2_sum": 5.217652054544287e-15,
     "method": "ema_0.9_shadow"
   },
   "mix_meta": {
-    "n_samples": 3,
-    "stamp": "20260711T075633Z",
-    "path": "/data/NEXUS/datasets/nexus_mix/sft_mix_20260711T075633Z.jsonl"
+    "n_samples": 7,
+    "stamp": "20260711T080358Z",
+    "path": "/data/NEXUS/datasets/nexus_mix/sft_mix_20260711T080358Z.jsonl"
   },
-  "checkpoint": "/data/NEXUS/checkpoints/cloud_suite/tinylm_tick33_20260711T075634Z.pt"
+  "checkpoint": "/data/NEXUS/checkpoints/cloud_suite/tinylm_tick33_20260711T080359Z.pt"
 }
