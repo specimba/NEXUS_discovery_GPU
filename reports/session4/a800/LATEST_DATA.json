@@ -1,77 +1,104 @@
 {
-  "stamp": "20260711T174322Z",
+  "stamp": "20260711T175444Z",
   "tick": 15,
   "mode": "data_gravity",
   "venue": "A800_scientist_v0.1",
+  "run_id": "force_1783792464178",
   "hf_set": true,
   "token_set": true,
+  "priority": "P0_labels_then_P1_jewels",
   "hf_endpoint": "https://hf-mirror.com",
   "host": "klab",
+  "net_probe": {
+    "hf-mirror.com": {
+      "ok": true,
+      "sec": 3.81
+    },
+    "huggingface.co": {
+      "ok": false,
+      "err": "[Errno 101] Network is unreachable",
+      "sec": 5.01
+    },
+    "api.github.com": {
+      "ok": true,
+      "sec": 0.14
+    },
+    "pypi.tuna.tsinghua.edu.cn": {
+      "ok": true,
+      "sec": 0.01
+    }
+  },
   "hub_ver": "1.23.0",
   "pulls": {
     "KRLabsOrg/lettucedetect-code-hallucination": {
       "ok": false,
       "kind": "tokenhd",
-      "err": "Got: ConnectError: [Errno 101] Network is unreachable\nAn error happened while trying to locate the files on the Hub, and we cannot find the appropriate snapshot folder for the specified revision on th",
-      "sec": 132.02
+      "err": "Got: ConnectTimeout: [Errno 110] Connection timed out\nAn error happened while trying to locate the files on the Hub, and we cannot find the appropriate snapshot folder for the specified revision on th",
+      "sec": 132.56
     },
     "Ivan1008/toolace-hallucination-spans": {
       "ok": false,
       "kind": "tokenhd",
-      "err": "Got: ConnectError: [Errno 101] Network is unreachable\nAn error happened while trying to locate the files on the Hub, and we cannot find the appropriate snapshot folder for the specified revision on th",
+      "err": "Got: ConnectTimeout: [Errno 110] Connection timed out\nAn error happened while trying to locate the files on the Hub, and we cannot find the appropriate snapshot folder for the specified revision on th",
       "sec": 131.07
     },
     "marrita/toolace-tool-calling-hallucination-ragtruth": {
       "ok": false,
       "kind": "tokenhd",
-      "err": "Got: ConnectError: [Errno 101] Network is unreachable\nAn error happened while trying to locate the files on the Hub, and we cannot find the appropriate snapshot folder for the specified revision on th",
+      "err": "Got: ConnectTimeout: [Errno 110] Connection timed out\nAn error happened while trying to locate the files on the Hub, and we cannot find the appropriate snapshot folder for the specified revision on th",
       "sec": 131.07
     },
     "wandb/RAGTruth-processed": {
       "ok": false,
       "kind": "tokenhd",
-      "err": "Got: ConnectError: [Errno 101] Network is unreachable\nAn error happened while trying to locate the files on the Hub, and we cannot find the appropriate snapshot folder for the specified revision on th",
+      "err": "Got: ConnectTimeout: [Errno 110] Connection timed out\nAn error happened while trying to locate the files on the Hub, and we cannot find the appropriate snapshot folder for the specified revision on th",
       "sec": 131.07
     },
     "nvidia/When2Call": {
       "ok": false,
       "kind": "tool",
-      "err": "Got: ConnectError: [Errno 101] Network is unreachable\nAn error happened while trying to locate the files on the Hub, and we cannot find the appropriate snapshot folder for the specified revision on th",
+      "err": "Got: ConnectTimeout: [Errno 110] Connection timed out\nAn error happened while trying to locate the files on the Hub, and we cannot find the appropriate snapshot folder for the specified revision on th",
       "sec": 131.07
     },
     "lockon/xlam-function-calling-60k": {
       "ok": false,
       "kind": "tool",
-      "err": "Got: ConnectError: [Errno 101] Network is unreachable\nAn error happened while trying to locate the files on the Hub, and we cannot find the appropriate snapshot folder for the specified revision on th",
-      "sec": 131.07
+      "err": "Got: ConnectError: [Errno 104] Connection reset by peer\nAn error happened while trying to locate the files on the Hub, and we cannot find the appropriate snapshot folder for the specified revision on ",
+      "sec": 20.67
     },
     "lockon/ToolACE": {
-      "ok": false,
+      "ok": true,
       "kind": "tool",
-      "err": "Got: ConnectError: [Errno 101] Network is unreachable\nAn error happened while trying to locate the files on the Hub, and we cannot find the appropriate snapshot folder for the specified revision on th",
-      "sec": 131.07
+      "files": 12,
+      "bytes": 37160121,
+      "sec": 118.23,
+      "path": "/home/mw/project/NEXUS_session4/datasets/tool/lockon__ToolACE"
     },
     "MadeAgents/xlam-irrelevance-7.5k": {
-      "ok": false,
+      "ok": true,
       "kind": "tool",
-      "err": "Got: ConnectError: [Errno 101] Network is unreachable\nAn error happened while trying to locate the files on the Hub, and we cannot find the appropriate snapshot folder for the specified revision on th",
-      "sec": 131.07
+      "files": 12,
+      "bytes": 7789833,
+      "sec": 70.88,
+      "path": "/home/mw/project/NEXUS_session4/datasets/tool/MadeAgents__xlam-irrelevance-7.5k"
     },
     "Salesforce/xlam-function-calling-60k": {
-      "ok": false,
+      "ok": true,
       "kind": "tool",
-      "err": "Got: ConnectError: [Errno 101] Network is unreachable\nAn error happened while trying to locate the files on the Hub, and we cannot find the appropriate snapshot folder for the specified revision on th",
-      "sec": 131.07
+      "files": 21,
+      "bytes": 97682569,
+      "sec": 13.64,
+      "path": "/home/mw/project/NEXUS_session4/datasets/tool/Salesforce__xlam-function-calling-60k"
     }
   },
-  "pull_ok": 0,
-  "pull_fail": 9,
+  "pull_ok": 3,
+  "pull_fail": 6,
   "cuda": true,
   "gpu_name": "NVIDIA A800-SXM4-80GB",
-  "matmul_sec": 0.0013,
+  "matmul_sec": 0.0677,
   "disk": {
     "total": 11258999068426240,
-    "used": 18374223462400,
-    "free": 11240624844963840
+    "used": 18374359777280,
+    "free": 11240624708648960
   }
 }
