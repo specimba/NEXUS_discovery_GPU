@@ -1,14 +1,15 @@
 {
-  "stamp": "20260711T122443Z",
-  "path": "/data/NEXUS/datasets/nexus_mix/sft_mix_20260711T122443Z.jsonl",
-  "n_samples": 19,
+  "stamp": "20260711T125035Z",
+  "path": "/data/NEXUS/datasets/nexus_mix/sft_mix_20260711T125035Z.jsonl",
+  "n_samples": 55,
   "stats": {
-    "files": 18,
-    "rows_read": 620,
-    "kept": 16,
+    "files": 22,
+    "rows_read": 658,
+    "kept": 52,
     "sources": {
       "sft_mix_20260711T075633Z.jsonl": 4,
-      "sft_mix_20260711T080358Z.jsonl": 12
+      "sft_mix_20260711T080358Z.jsonl": 12,
+      "sft_mix_20260711T122443Z.jsonl": 36
     }
   },
   "seed": 42
