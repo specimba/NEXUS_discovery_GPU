@@ -1,6 +1,6 @@
 {
-  "stamp": "20260711T122444Z",
-  "tick": 11,
+  "stamp": "20260711T125037Z",
+  "tick": 12,
   "session": "session4",
   "gpu_line": "GPU 0: NVIDIA A100-SXM4-80GB (UUID: GPU-8206e835-916e-e18a-f4be-8f2718d767f0)",
   "torch": "2.4.0+cu124",
@@ -13,45 +13,45 @@
     ],
     "nan_detected": true,
     "matmul_256": {
-      "sec": 0.06899261474609375,
-      "gflops": 0.4863481710830477,
+      "sec": 0.06831073760986328,
+      "gflops": 0.4912028939232992,
       "finite": true
     },
     "matmul_512": {
-      "sec": 0.00015115737915039062,
-      "gflops": 1775.867360950511,
+      "sec": 0.00015974044799804688,
+      "gflops": 1680.4476221531702,
       "finite": true
     },
     "matmul_1024": {
-      "sec": 0.0003757476806640625,
-      "gflops": 5715.227953515858,
+      "sec": 0.00039076805114746094,
+      "gflops": 5495.545609970099,
       "finite": true
     },
     "matmul_2048": {
-      "sec": 0.0013604164123535156,
-      "gflops": 12628.390122314746,
+      "sec": 0.0013594627380371094,
+      "gflops": 12637.249042077856,
       "finite": true
     }
   },
   "train": {
     "steps": 300,
-    "sec": 2.810478687286377,
-    "loss_start": 8.558062553405762,
-    "loss_end": 0.20157462358474731,
+    "sec": 2.5662336349487305,
+    "loss_start": 8.417832374572754,
+    "loss_end": 0.08974555879831314,
     "aborted": null,
     "params": 4209664
   },
   "bench": {
-    "fwd_20x_b8_t64_sec": 0.01961207389831543
+    "fwd_20x_b8_t64_sec": 0.018210172653198242
   },
   "merge_dry": {
-    "ema_l2_sum": 5.083666552797572e-15,
+    "ema_l2_sum": 4.760156395158445e-15,
     "method": "ema_0.9_shadow"
   },
   "mix_meta": {
-    "n_samples": 19,
-    "stamp": "20260711T122443Z",
-    "path": "/data/NEXUS/datasets/nexus_mix/sft_mix_20260711T122443Z.jsonl"
+    "n_samples": 55,
+    "stamp": "20260711T125035Z",
+    "path": "/data/NEXUS/datasets/nexus_mix/sft_mix_20260711T125035Z.jsonl"
   },
-  "checkpoint": "/data/NEXUS/checkpoints/cloud_suite/tinylm_tick11_20260711T122444Z.pt"
+  "checkpoint": "/data/NEXUS/checkpoints/cloud_suite/tinylm_tick12_20260711T125037Z.pt"
 }
