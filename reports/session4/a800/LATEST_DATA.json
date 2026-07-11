@@ -1,13 +1,13 @@
 {
-  "stamp": "20260711T202442Z",
-  "tick": 24,
+  "stamp": "20260711T203822Z",
+  "tick": 27,
   "mode": "data_gravity",
   "venue": "A800_scientist_v0.1",
   "hf_set": true,
   "token_set": true,
   "priority": "P0_labels_then_P1_jewels",
   "hf_endpoint": "https://hf-mirror.com",
-  "run_id": "go_data_24_20260711T202442Z",
+  "run_id": "go_data_27_20260711T203822Z",
   "host": "klab",
   "hub_ver": "1.23.0",
   "pulls": {
@@ -17,7 +17,7 @@
       "path": "/home/mw/project/NEXUS_session4/datasets/tokenhd/KRLabsOrg__lettucedetect-code-hallucination",
       "files": 99,
       "bytes": 790957044,
-      "sec": 0.78
+      "sec": 0.88
     },
     "Ivan1008/toolace-hallucination-spans": {
       "ok": true,
@@ -25,7 +25,7 @@
       "path": "/home/mw/project/NEXUS_session4/datasets/tokenhd/Ivan1008__toolace-hallucination-spans",
       "files": 45,
       "bytes": 6224603,
-      "sec": 0.46
+      "sec": 0.43
     },
     "marrita/toolace-tool-calling-hallucination-ragtruth": {
       "ok": true,
@@ -33,7 +33,7 @@
       "path": "/home/mw/project/NEXUS_session4/datasets/tokenhd/marrita__toolace-tool-calling-hallucination-ragtruth",
       "files": 45,
       "bytes": 1632225,
-      "sec": 0.43
+      "sec": 0.51
     },
     "wandb/RAGTruth-processed": {
       "ok": true,
@@ -41,7 +41,7 @@
       "path": "/home/mw/project/NEXUS_session4/datasets/tokenhd/wandb__RAGTruth-processed",
       "files": 15,
       "bytes": 26171097,
-      "sec": 0.43
+      "sec": 0.45
     },
     "nvidia/When2Call": {
       "ok": true,
@@ -49,7 +49,7 @@
       "path": "/home/mw/project/NEXUS_session4/datasets/tool/nvidia__When2Call",
       "files": 21,
       "bytes": 63428382,
-      "sec": 0.64
+      "sec": 0.56
     },
     "lockon/xlam-function-calling-60k": {
       "ok": true,
@@ -57,7 +57,7 @@
       "path": "/home/mw/project/NEXUS_session4/datasets/tool/lockon__xlam-function-calling-60k",
       "files": 21,
       "bytes": 97682569,
-      "sec": 0.54
+      "sec": 0.44
     },
     "lockon/ToolACE": {
       "ok": true,
@@ -65,7 +65,7 @@
       "path": "/home/mw/project/NEXUS_session4/datasets/tool/lockon__ToolACE",
       "files": 12,
       "bytes": 37160121,
-      "sec": 0.42
+      "sec": 0.4
     },
     "MadeAgents/xlam-irrelevance-7.5k": {
       "ok": true,
@@ -73,7 +73,7 @@
       "path": "/home/mw/project/NEXUS_session4/datasets/tool/MadeAgents__xlam-irrelevance-7.5k",
       "files": 12,
       "bytes": 7789833,
-      "sec": 0.47
+      "sec": 0.41
     },
     "Salesforce/xlam-function-calling-60k": {
       "ok": true,
@@ -81,7 +81,7 @@
       "path": "/home/mw/project/NEXUS_session4/datasets/tool/Salesforce__xlam-function-calling-60k",
       "files": 21,
       "bytes": 97682569,
-      "sec": 0.48
+      "sec": 0.55
     }
   },
   "pull_ok": 9,
@@ -91,7 +91,7 @@
   "matmul_sec": 0.0089,
   "disk": {
     "total": 11258999068426240,
-    "used": 18415964127232,
-    "free": 11240583104299008
+    "used": 18416145530880,
+    "free": 11240582922895360
   }
 }
