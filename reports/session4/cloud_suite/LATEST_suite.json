@@ -1,6 +1,6 @@
 {
-  "stamp": "20260711T201754Z",
-  "tick": 22,
+  "stamp": "20260711T235143Z",
+  "tick": 73,
   "session": "session4",
   "gpu_line": "GPU 0: NVIDIA A800-SXM4-80GB (UUID: GPU-3df8ec45-ea04-9bde-3b6c-5c85409e9372)",
   "torch": "2.6.0+cu124",
@@ -13,18 +13,18 @@
     ],
     "nan_detected": true,
     "matmul_256": {
-      "sec": 0.07060027122497559,
-      "gflops": 0.47527341492889,
+      "sec": 0.07084941864013672,
+      "gflops": 0.47360207950938876,
       "finite": true
     },
     "matmul_512": {
-      "sec": 0.00017309188842773438,
-      "gflops": 1550.8263179650469,
+      "sec": 0.00016546249389648438,
+      "gflops": 1622.3341597155963,
       "finite": true
     },
     "matmul_1024": {
-      "sec": 0.00041413307189941406,
-      "gflops": 5185.49179892976,
+      "sec": 0.0004050731658935547,
+      "gflops": 5301.4710151506715,
       "finite": true
     },
     "matmul_2048": {
@@ -35,23 +35,23 @@
   },
   "train": {
     "steps": 500,
-    "sec": 3.588330030441284,
-    "loss_start": 8.585929870605469,
-    "loss_end": 0.4724299907684326,
+    "sec": 3.6346867084503174,
+    "loss_start": 8.386561393737793,
+    "loss_end": 0.4726172089576721,
     "aborted": null,
     "params": 4209664
   },
   "bench": {
-    "fwd_20x_b8_t64_sec": 0.01936054229736328
+    "fwd_20x_b8_t64_sec": 0.019867658615112305
   },
   "merge_dry": {
-    "ema_l2_sum": 5.1465661726345306e-15,
+    "ema_l2_sum": 5.239434448423046e-15,
     "method": "ema_0.9_shadow"
   },
   "mix_meta": {
     "n_samples": 3,
-    "stamp": "20260711T201752Z",
-    "path": "/home/mw/project/NEXUS_session4/datasets/nexus_mix/sft_mix_20260711T201752Z.jsonl"
+    "stamp": "20260711T235141Z",
+    "path": "/home/mw/project/NEXUS_session4/datasets/nexus_mix/sft_mix_20260711T235141Z.jsonl"
   },
-  "checkpoint": "/home/mw/project/NEXUS_session4/checkpoints/cloud_suite/tinylm_tick22_20260711T201754Z.pt"
+  "checkpoint": "/home/mw/project/NEXUS_session4/checkpoints/cloud_suite/tinylm_tick73_20260711T235143Z.pt"
 }
