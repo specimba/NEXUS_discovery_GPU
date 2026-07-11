@@ -1,0 +1,9 @@
+{
+  "tick": 1,
+  "ts": "2026-07-11T04:51:44.527Z",
+  "track": "notebook_a800",
+  "probe": {
+    "head": "document\nedit\nCheck\nrun\nKernel\nMirror\nrelease\nhelp\nguide\nNEXUS_scientist_v0.1\nsave\nGenerate version\n0.0h used\n \nNotebook\nProtein Folding and Visualization - 1618\nNotebook-python3-7117\nNEXUS_scientist_v0.1\nNEXUS_scientist_v0.1\nsave\nDemonstration\nOffline tasks\nRun all\nInterruption\nReboot the Kernel\ncode\ntext\ndelete\n Quote\nPython 3\n1\n[]\n1\nWelcome to Notebook\n\nHere you can write code, documentation\n\nAbout the file directory\n\nThe ` project` directory is the workspace for this project. You can place all files related to running the project here; any additions, deletions, or modifications made to files in this directory will be preserved.\n\nThe ` input` directory is where datasets are mounted. All datasets mounted into the project are located here. The `input` directory is hidden when no datasets ",
+    "hasNexus": false
+  }
+}
