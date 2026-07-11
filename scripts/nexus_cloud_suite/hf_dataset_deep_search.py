@@ -153,10 +153,52 @@ def main() -> int:
                 local.append({"name": p.name, "path": str(p)})
     results["local_d_datasets"] = local
 
+    # Probe curated access (gated packages need user HF agreement if 401/403)
+    token = os.environ.get("HF_TOKEN") or os.environ.get("HUGGING_FACE_HUB_TOKEN") or ""
+    curated_access = []
+    need_user = []
+    import urllib.request
+    import urllib.error
+
+    for c in CURATED:
+        rid = c.get("id")
+        if not rid:
+            continue
+        url = f"https://huggingface.co/api/datasets/{rid}/tree/main"
+        headers = {"User-Agent": "nexus-cloud-suite"}
+        if token:
+            headers["Authorization"] = f"Bearer {token}"
+        entry = {"id": rid, "cat": c.get("cat"), "gated_flag": c.get("gated"), "access": "unknown"}
+        try:
+            req = urllib.request.Request(url, headers=headers)
+            with urllib.request.urlopen(req, timeout=30) as resp:
+                entry["access"] = "ok"
+                entry["http"] = resp.status
+        except urllib.error.HTTPError as e:
+            entry["http"] = e.code
+            if e.code in (401, 403):
+                entry["access"] = "need_approval"
+                entry["url"] = f"https://huggingface.co/datasets/{rid}"
+                need_user.append(entry)
+            else:
+                entry["access"] = f"http_{e.code}"
+        except Exception as e:
+            entry["access"] = "error"
+            entry["error"] = redact(str(e))[:120]
+        curated_access.append(entry)
+        print("CURATED", rid, entry["access"])
+
+    results["curated_access"] = curated_access
+    results["need_user_gate_approval"] = need_user
+    if need_user:
+        print("GATE_APPROVAL_NEEDED", len(need_user))
+        for n in need_user:
+            print("  OPEN", n.get("url") or n["id"])
+
     out = out_dir / f"search_{stamp}.json"
     out.write_text(json.dumps(results, indent=2), encoding="utf-8")
     (out_dir / "LATEST.json").write_text(json.dumps(results, indent=2), encoding="utf-8")
-    print("WROTE", out)
+    print("WROTE", out, "token_used", bool(token), "gates_needed", len(need_user))
     return 0
 
 
