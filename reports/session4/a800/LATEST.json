@@ -1,76 +1,9 @@
 {
-  "stamp": "20260711T200816Z",
-  "tick": 20,
-  "venue": "A800_scientist_v0.1",
-  "cwd": "/home/mw/project",
-  "train_steps": 500,
-  "hf_set": true,
-  "token_set": true,
-  "host": "klab",
-  "nvidia_smi": "GPU 0: NVIDIA A800-SXM4-80GB (UUID: GPU-3df8ec45-ea04-9bde-3b6c-5c85409e9372)",
-  "torch": "2.6.0+cu124",
-  "cuda": true,
+  "stamp": "20260711T201203Z",
+  "tick": 21,
+  "mode": "data_gravity",
+  "pull_ok": 9,
   "gpu_name": "NVIDIA A800-SXM4-80GB",
-  "train": {
-    "sec": 0.467,
-    "steps": 500,
-    "loss_curve": [
-      8.319241523742676,
-      8.364336967468262,
-      8.343993186950684,
-      8.343268394470215,
-      8.293896675109863,
-      8.348748207092285,
-      8.304612159729004,
-      8.34952449798584,
-      8.342362403869629,
-      8.320632934570312,
-      8.29828929901123
-    ],
-    "device": "cuda"
-  },
-  "ckpt": "/home/mw/project/NEXUS_session4/checkpoints/tinylm_a800_t20_20260711T200816Z.pt",
-  "/home/mw/project": {
-    "exists": true,
-    "n": 2,
-    "sample": [
-      ".ide_store",
-      "NEXUS_session4"
-    ]
-  },
-  "/home/mw/input": {
-    "exists": false,
-    "n": 0,
-    "sample": []
-  },
-  "/home/mw/temp": {
-    "exists": true,
-    "n": 0,
-    "sample": []
-  },
-  "/home/mw/work": {
-    "exists": true,
-    "n": 0,
-    "sample": []
-  },
-  "/data": {
-    "exists": false,
-    "n": 0,
-    "sample": []
-  },
-  "tokenhd": {
-    "readme": "/home/mw/project/NEXUS_session4/tokenhd/README.md",
-    "stub": "/home/mw/project/NEXUS_session4/tokenhd/train_tokenhd_stub.py",
-    "note": "scaffold only; full 0.6B after F-2"
-  },
-  "gh_upload": "ae2da9c",
-  "gh_latest": "63945da",
-  "suite_pull": {
-    "run_suite.py": "ok",
-    "hf_dataset_deep_search.py": "ok",
-    "build_nexus_sft_mix.py": "ok",
-    "train_and_stress.py": "ok",
-    "README.md": "ok"
-  },
-  "suite_err": "Command '['python3', '/home/mw/project/NEXUS_session4/scripts/nexus_cloud_suite/run_suite.py']' timed out after 45 seconds"
+  "cuda": true,
+  "note": "data tick; train LATEST may lag"
 }
