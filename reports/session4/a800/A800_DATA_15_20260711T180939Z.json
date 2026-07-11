@@ -1,0 +1,112 @@
+{
+  "stamp": "20260711T180939Z",
+  "tick": 15,
+  "mode": "data_gravity",
+  "venue": "A800_scientist_v0.1",
+  "run_id": "force_1783792464178",
+  "hf_set": true,
+  "token_set": true,
+  "priority": "P0_labels_then_P1_jewels",
+  "hf_endpoint": "https://hf-mirror.com",
+  "host": "klab",
+  "net_probe": {
+    "hf-mirror.com": {
+      "ok": true,
+      "sec": 2.59
+    },
+    "huggingface.co": {
+      "ok": false,
+      "err": "[Errno 101] Network is unreachable",
+      "sec": 5.01
+    },
+    "api.github.com": {
+      "ok": true,
+      "sec": 0.12
+    },
+    "pypi.tuna.tsinghua.edu.cn": {
+      "ok": true,
+      "sec": 0.01
+    }
+  },
+  "hub_ver": "1.23.0",
+  "pulls": {
+    "KRLabsOrg/lettucedetect-code-hallucination": {
+      "ok": false,
+      "kind": "tokenhd",
+      "err": "The read operation timed out",
+      "sec": 99.99
+    },
+    "Ivan1008/toolace-hallucination-spans": {
+      "ok": false,
+      "kind": "tokenhd",
+      "err": "The read operation timed out",
+      "sec": 6108.25
+    },
+    "marrita/toolace-tool-calling-hallucination-ragtruth": {
+      "ok": true,
+      "kind": "tokenhd",
+      "files": 45,
+      "bytes": 1632225,
+      "sec": 16.45,
+      "path": "/home/mw/project/NEXUS_session4/datasets/tokenhd/marrita__toolace-tool-calling-hallucination-ragtruth"
+    },
+    "wandb/RAGTruth-processed": {
+      "ok": true,
+      "kind": "tokenhd",
+      "files": 15,
+      "bytes": 26171098,
+      "sec": 7.12,
+      "path": "/home/mw/project/NEXUS_session4/datasets/tokenhd/wandb__RAGTruth-processed"
+    },
+    "nvidia/When2Call": {
+      "ok": true,
+      "kind": "tool",
+      "files": 21,
+      "bytes": 63428384,
+      "sec": 8.51,
+      "path": "/home/mw/project/NEXUS_session4/datasets/tool/nvidia__When2Call"
+    },
+    "lockon/xlam-function-calling-60k": {
+      "ok": true,
+      "kind": "tool",
+      "files": 21,
+      "bytes": 97682568,
+      "sec": 9.79,
+      "path": "/home/mw/project/NEXUS_session4/datasets/tool/lockon__xlam-function-calling-60k"
+    },
+    "lockon/ToolACE": {
+      "ok": true,
+      "kind": "tool",
+      "files": 12,
+      "bytes": 37160121,
+      "sec": 0.49,
+      "path": "/home/mw/project/NEXUS_session4/datasets/tool/lockon__ToolACE"
+    },
+    "MadeAgents/xlam-irrelevance-7.5k": {
+      "ok": true,
+      "kind": "tool",
+      "files": 12,
+      "bytes": 7789833,
+      "sec": 0.52,
+      "path": "/home/mw/project/NEXUS_session4/datasets/tool/MadeAgents__xlam-irrelevance-7.5k"
+    },
+    "Salesforce/xlam-function-calling-60k": {
+      "ok": true,
+      "kind": "tool",
+      "files": 21,
+      "bytes": 97682569,
+      "sec": 0.46,
+      "path": "/home/mw/project/NEXUS_session4/datasets/tool/Salesforce__xlam-function-calling-60k"
+    }
+  },
+  "pull_ok": 7,
+  "pull_fail": 2,
+  "cuda": true,
+  "gpu_name": "NVIDIA A800-SXM4-80GB",
+  "matmul_sec": 0.0014,
+  "disk": {
+    "total": 11258999068426240,
+    "used": 18415661088768,
+    "free": 11240583407337472
+  }
+}
