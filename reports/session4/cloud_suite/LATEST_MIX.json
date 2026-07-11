@@ -1,10 +1,10 @@
 {
-  "stamp": "20260711T201752Z",
-  "path": "/home/mw/project/NEXUS_session4/datasets/nexus_mix/sft_mix_20260711T201752Z.jsonl",
+  "stamp": "20260711T235141Z",
+  "path": "/home/mw/project/NEXUS_session4/datasets/nexus_mix/sft_mix_20260711T235141Z.jsonl",
   "n_samples": 3,
   "stats": {
     "files": 40,
-    "rows_read": 2449,
+    "rows_read": 0,
     "kept": 0,
     "sources": {}
   },
