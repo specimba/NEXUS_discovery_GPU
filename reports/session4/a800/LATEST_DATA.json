@@ -1,5 +1,5 @@
 {
-  "stamp": "20260711T172807Z",
+  "stamp": "20260711T174236Z",
   "tick": 15,
   "mode": "data_gravity",
   "venue": "A800_scientist_v0.1",
@@ -13,31 +13,31 @@
       "ok": false,
       "kind": "tokenhd",
       "err": "Got: ConnectError: [Errno 101] Network is unreachable\nAn error happened while trying to locate the files on the Hub, and we cannot find the appropriate snapshot folder for the specified revision on th",
-      "sec": 131.33
+      "sec": 0.01
     },
     "Ivan1008/toolace-hallucination-spans": {
       "ok": false,
       "kind": "tokenhd",
       "err": "Got: ConnectError: [Errno 101] Network is unreachable\nAn error happened while trying to locate the files on the Hub, and we cannot find the appropriate snapshot folder for the specified revision on th",
-      "sec": 131.07
+      "sec": 0.01
     },
     "marrita/toolace-tool-calling-hallucination-ragtruth": {
       "ok": false,
       "kind": "tokenhd",
       "err": "Got: ConnectError: [Errno 101] Network is unreachable\nAn error happened while trying to locate the files on the Hub, and we cannot find the appropriate snapshot folder for the specified revision on th",
-      "sec": 131.07
+      "sec": 0.01
     },
     "wandb/RAGTruth-processed": {
       "ok": false,
       "kind": "tokenhd",
       "err": "Got: ConnectError: [Errno 101] Network is unreachable\nAn error happened while trying to locate the files on the Hub, and we cannot find the appropriate snapshot folder for the specified revision on th",
-      "sec": 131.07
+      "sec": 0.01
     },
     "nvidia/When2Call": {
       "ok": false,
       "kind": "tool",
       "err": "Got: ConnectError: [Errno 101] Network is unreachable\nAn error happened while trying to locate the files on the Hub, and we cannot find the appropriate snapshot folder for the specified revision on th",
-      "sec": 131.07
+      "sec": 0.01
     },
     "lockon/xlam-function-calling-60k": {
       "ok": false,
@@ -68,10 +68,10 @@
   "pull_fail": 9,
   "cuda": true,
   "gpu_name": "NVIDIA A800-SXM4-80GB",
-  "matmul_sec": 0.0092,
+  "matmul_sec": 0.0089,
   "disk": {
     "total": 11258999068426240,
-    "used": 18374061981696,
-    "free": 11240625006444544
+    "used": 18374063030272,
+    "free": 11240625005395968
   }
 }
