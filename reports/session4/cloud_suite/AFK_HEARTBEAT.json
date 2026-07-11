@@ -1,0 +1,12 @@
+{
+  "stamp": "2026-07-11T08:41:26.454Z",
+  "check": 1,
+  "pid": 93940,
+  "alive": true,
+  "cdp_ok": true,
+  "minutes_left": "120.0",
+  "last_log": [
+    ""
+  ],
+  "note": "AFK monitor heartbeat — no secrets"
+}
