@@ -1,0 +1,13 @@
+{
+  "stamp": "20260711T235148Z",
+  "tick": 73,
+  "session": "session4",
+  "exit_codes": {
+    "hf_search": 0,
+    "build_mix": 0,
+    "train_stress": 0
+  },
+  "gpu": "GPU 0: NVIDIA A800-SXM4-80GB (UUID: GPU-3df8ec45-ea04-9bde-3b6c-5c85409e9372)",
+  "df": "df: /data: No such file or directory",
+  "host": "klab"
+}
