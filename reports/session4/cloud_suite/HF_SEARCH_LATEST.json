@@ -1,0 +1,50 @@
+{
+  "stamp": "20260711T075620Z",
+  "categories": {
+    "tool_calling": [],
+    "safety_guard": [],
+    "reasoning_sft": [],
+    "code_agent": [],
+    "mcp_agent": []
+  },
+  "curated": [
+    {
+      "id": "glaiveai/glaive-function-calling-v2",
+      "cat": "tool_calling",
+      "local": "glaive-function-calling-v2"
+    },
+    {
+      "id": "NousResearch/hermes-function-calling-v1",
+      "cat": "tool_calling",
+      "local": "test-hermes-function-calling-v1"
+    },
+    {
+      "id": "Salesforce/APIGen-MT-5k",
+      "cat": "tool_calling",
+      "local": "test-APIGen-MT-5k"
+    },
+    {
+      "id": "openbmb/UltraInteract_sft",
+      "cat": "reasoning_sft",
+      "local": "test-UltraInteract_sft"
+    },
+    {
+      "id": "Salesforce/xlam-function-calling-60k",
+      "cat": "tool_calling",
+      "local": "xlam-function-calling-60k",
+      "gated": true
+    },
+    {
+      "id": "princeton-nlp/SWE-bench_Verified",
+      "cat": "code_agent",
+      "local": null
+    },
+    {
+      "id": "SWE-Gym/OpenHands-SFT-Trajectories",
+      "cat": "code_agent",
+      "local": null
+    }
+  ],
+  "token_used": false,
+  "local_d_datasets": []
+}
