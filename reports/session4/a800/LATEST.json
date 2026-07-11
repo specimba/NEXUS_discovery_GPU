@@ -1,6 +1,6 @@
 {
-  "stamp": "20260711T161636Z",
-  "tick": 9,
+  "stamp": "20260711T163233Z",
+  "tick": 10,
   "venue": "A800_scientist_v0.1",
   "cwd": "/home/mw/project",
   "train_steps": 500,
@@ -12,24 +12,24 @@
   "cuda": true,
   "gpu_name": "NVIDIA A800-SXM4-80GB",
   "train": {
-    "sec": 0.502,
+    "sec": 0.506,
     "steps": 500,
     "loss_curve": [
-      8.319184303283691,
-      8.311484336853027,
-      8.32275390625,
-      8.302794456481934,
-      8.324377059936523,
-      8.308850288391113,
-      8.33205509185791,
-      8.311305046081543,
-      8.312668800354004,
-      8.302337646484375,
-      8.321331977844238
+      8.318429946899414,
+      8.354867935180664,
+      8.339110374450684,
+      8.32335090637207,
+      8.324812889099121,
+      8.286507606506348,
+      8.37534236907959,
+      8.289470672607422,
+      8.329473495483398,
+      8.360017776489258,
+      8.344225883483887
     ],
     "device": "cuda"
   },
-  "ckpt": "/home/mw/project/NEXUS_session4/checkpoints/tinylm_a800_t9_20260711T161636Z.pt",
+  "ckpt": "/home/mw/project/NEXUS_session4/checkpoints/tinylm_a800_t10_20260711T163233Z.pt",
   "/home/mw/project": {
     "exists": true,
     "n": 2,
@@ -63,14 +63,5 @@
     "stub": "/home/mw/project/NEXUS_session4/tokenhd/train_tokenhd_stub.py",
     "note": "scaffold only; full 0.6B after F-2"
   },
-  "gh_upload": "fba9bb9",
-  "gh_latest": "dfa9d71",
-  "suite_pull": {
-    "run_suite.py": "ok",
-    "hf_dataset_deep_search.py": "ok",
-    "build_nexus_sft_mix.py": "ok",
-    "train_and_stress.py": "ok",
-    "README.md": "ok"
-  },
-  "suite_err": "Command '['python3', '/home/mw/project/NEXUS_session4/scripts/nexus_cloud_suite/run_suite.py']' timed out after 45 seconds"
+  "gh_upload": "3fa222b"
 }
