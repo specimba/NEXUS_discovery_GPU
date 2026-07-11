@@ -1,5 +1,5 @@
 {
-  "stamp": "20260711T195402Z",
+  "stamp": "20260711T195417Z",
   "tick": 15,
   "mode": "data_gravity",
   "venue": "A800_scientist_v0.1",
@@ -12,7 +12,7 @@
   "net_probe": {
     "hf-mirror.com": {
       "ok": true,
-      "sec": 0.12
+      "sec": 0.47
     },
     "huggingface.co": {
       "ok": false,
@@ -21,7 +21,7 @@
     },
     "api.github.com": {
       "ok": true,
-      "sec": 0.13
+      "sec": 0.12
     },
     "pypi.tuna.tsinghua.edu.cn": {
       "ok": true,
@@ -35,7 +35,7 @@
       "kind": "tokenhd",
       "files": 99,
       "bytes": 790957039,
-      "sec": 0.74,
+      "sec": 1.8,
       "path": "/home/mw/project/NEXUS_session4/datasets/tokenhd/KRLabsOrg__lettucedetect-code-hallucination"
     },
     "Ivan1008/toolace-hallucination-spans": {
@@ -43,7 +43,7 @@
       "kind": "tokenhd",
       "files": 45,
       "bytes": 6224606,
-      "sec": 0.93,
+      "sec": 0.79,
       "path": "/home/mw/project/NEXUS_session4/datasets/tokenhd/Ivan1008__toolace-hallucination-spans"
     },
     "marrita/toolace-tool-calling-hallucination-ragtruth": {
@@ -51,7 +51,7 @@
       "kind": "tokenhd",
       "files": 45,
       "bytes": 1632225,
-      "sec": 0.45,
+      "sec": 1.04,
       "path": "/home/mw/project/NEXUS_session4/datasets/tokenhd/marrita__toolace-tool-calling-hallucination-ragtruth"
     },
     "wandb/RAGTruth-processed": {
@@ -59,7 +59,7 @@
       "kind": "tokenhd",
       "files": 15,
       "bytes": 26171098,
-      "sec": 0.43,
+      "sec": 0.93,
       "path": "/home/mw/project/NEXUS_session4/datasets/tokenhd/wandb__RAGTruth-processed"
     },
     "nvidia/When2Call": {
@@ -67,7 +67,7 @@
       "kind": "tool",
       "files": 21,
       "bytes": 63428384,
-      "sec": 0.47,
+      "sec": 0.86,
       "path": "/home/mw/project/NEXUS_session4/datasets/tool/nvidia__When2Call"
     },
     "lockon/xlam-function-calling-60k": {
@@ -75,7 +75,7 @@
       "kind": "tool",
       "files": 21,
       "bytes": 97682568,
-      "sec": 0.41,
+      "sec": 0.93,
       "path": "/home/mw/project/NEXUS_session4/datasets/tool/lockon__xlam-function-calling-60k"
     },
     "lockon/ToolACE": {
@@ -83,7 +83,7 @@
       "kind": "tool",
       "files": 12,
       "bytes": 37160121,
-      "sec": 0.43,
+      "sec": 0.92,
       "path": "/home/mw/project/NEXUS_session4/datasets/tool/lockon__ToolACE"
     },
     "MadeAgents/xlam-irrelevance-7.5k": {
@@ -91,7 +91,7 @@
       "kind": "tool",
       "files": 12,
       "bytes": 7789833,
-      "sec": 0.44,
+      "sec": 1.02,
       "path": "/home/mw/project/NEXUS_session4/datasets/tool/MadeAgents__xlam-irrelevance-7.5k"
     },
     "Salesforce/xlam-function-calling-60k": {
@@ -99,7 +99,7 @@
       "kind": "tool",
       "files": 21,
       "bytes": 97682569,
-      "sec": 0.48,
+      "sec": 0.92,
       "path": "/home/mw/project/NEXUS_session4/datasets/tool/Salesforce__xlam-function-calling-60k"
     }
   },
@@ -110,7 +110,7 @@
   "matmul_sec": 0.0013,
   "disk": {
     "total": 11258999068426240,
-    "used": 18415764897792,
-    "free": 11240583303528448
+    "used": 18415770140672,
+    "free": 11240583298285568
   }
 }
