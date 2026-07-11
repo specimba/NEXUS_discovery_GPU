@@ -1,0 +1,11 @@
+{
+  "stamp": "20260711T122449Z",
+  "phase": 11,
+  "bonus": true,
+  "workbench": "nb-582b5f51afb6b085773ce464c2654850",
+  "gpu": "NVIDIA A100-SXM4-80GB",
+  "data_nexus_files_approx": 549,
+  "gh_suite_run": "RUN_20260711T122449Z_tick11",
+  "recoverability": "high_juicefs_plus_github",
+  "note": "PHASE11_BONUS also on /data; bashrc editor buffer may still look polluted\u2014prefer disk terminal reset"
+}
