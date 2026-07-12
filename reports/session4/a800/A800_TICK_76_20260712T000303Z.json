@@ -62,5 +62,15 @@
     "readme": "/home/mw/project/NEXUS_session4/tokenhd/README.md",
     "stub": "/home/mw/project/NEXUS_session4/tokenhd/train_tokenhd_stub.py",
     "note": "scaffold only; full 0.6B after F-2"
-  }
+  },
+  "gh_upload": "4badfde",
+  "gh_latest": "b0c3b97",
+  "suite_pull": {
+    "run_suite.py": "HTTP Error 502: Bad Gateway",
+    "hf_dataset_deep_search.py": "ok",
+    "build_nexus_sft_mix.py": "ok",
+    "train_and_stress.py": "ok",
+    "README.md": "ok"
+  },
+  "suite_exit": "skip_or_missing"
 }
