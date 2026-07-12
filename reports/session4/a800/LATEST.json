@@ -1,79 +1,37 @@
 {
-  "stamp": "20260712T144323Z",
-  "tick": 102,
+  "stamp": "20260712T175455Z",
+  "tick": 103,
   "venue": "A800_scientist_v0.1",
-  "cwd": "/home/mw/project",
-  "train_steps": 500,
+  "train_steps": 300,
   "hf_set": true,
   "token_set": true,
+  "mode": "nuke_one_cell",
+  "clean": true,
   "host": "klab",
   "nvidia_smi": "GPU 0: NVIDIA A800-SXM4-80GB (UUID: GPU-3df8ec45-ea04-9bde-3b6c-5c85409e9372)",
   "torch": "2.6.0+cu124",
   "cuda": true,
   "gpu_name": "NVIDIA A800-SXM4-80GB",
+  "resumed_from": "/home/mw/project/NEXUS_session4/checkpoints/tinylm_a800_t102_20260712T144323Z.pt",
   "train": {
-    "sec": 0.503,
-    "steps": 500,
+    "sec": 0.274,
+    "steps": 300,
     "loss_curve": [
-      8.321977615356445,
-      8.314828872680664,
-      8.313298225402832,
-      8.321727752685547,
-      8.329550743103027,
-      8.344830513000488,
-      8.306897163391113,
-      8.349508285522461,
-      8.372511863708496,
-      8.360998153686523,
-      8.358590126037598
+      8.37894058227539,
+      8.326260566711426,
+      8.33128833770752,
+      8.360967636108398,
+      8.3355073928833,
+      8.38459587097168,
+      8.341761589050293,
+      8.36806869506836,
+      8.372652053833008,
+      8.354909896850586,
+      8.323102951049805
     ],
     "device": "cuda"
   },
-  "ckpt": "/home/mw/project/NEXUS_session4/checkpoints/tinylm_a800_t102_20260712T144323Z.pt",
-  "ckpt_pruned": 1,
+  "ckpt": "/home/mw/project/NEXUS_session4/checkpoints/tinylm_a800_t103_20260712T175455Z.pt",
   "ckpt_kept": 2,
-  "project_du": "192M\t/home/mw/project",
-  "/home/mw/project": {
-    "exists": true,
-    "n": 2,
-    "sample": [
-      ".ide_store",
-      "NEXUS_session4"
-    ]
-  },
-  "/home/mw/input": {
-    "exists": false,
-    "n": 0,
-    "sample": []
-  },
-  "/home/mw/temp": {
-    "exists": false,
-    "n": 0,
-    "sample": []
-  },
-  "/home/mw/work": {
-    "exists": true,
-    "n": 0,
-    "sample": []
-  },
-  "/data": {
-    "exists": false,
-    "n": 0,
-    "sample": []
-  },
-  "tokenhd": {
-    "readme": "/home/mw/project/NEXUS_session4/tokenhd/README.md",
-    "stub": "/home/mw/project/NEXUS_session4/tokenhd/train_tokenhd_stub.py",
-    "note": "scaffold only; full 0.6B after F-2"
-  },
-  "gh_upload": "519d0bc",
-  "gh_latest": "be3a814",
-  "suite_pull": {
-    "run_suite.py": "ok",
-    "hf_dataset_deep_search.py": "ok",
-    "build_nexus_sft_mix.py": "ok",
-    "train_and_stress.py": "ok",
-    "README.md": "ok"
-  },
-  "suite_err": "Command '['python3', '/home/mw/project/NEXUS_session4/scripts/nexus_cloud_suite/run_suite.py']' timed out after 45 seconds"
+  "gh_upload": "70877d3"
 }
