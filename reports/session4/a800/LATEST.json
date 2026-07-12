@@ -1,6 +1,6 @@
 {
-  "stamp": "20260712T222913Z",
-  "tick": 164,
+  "stamp": "20260712T223102Z",
+  "tick": 165,
   "venue": "A800_scientist_v0.1",
   "train_steps": 500,
   "hf_set": true,
@@ -12,26 +12,26 @@
   "torch": "2.6.0+cu124",
   "cuda": true,
   "gpu_name": "NVIDIA A800-SXM4-80GB",
-  "resumed_from": "/home/mw/project/NEXUS_session4/checkpoints/tinylm_a800_t163_20260712T222724Z.pt",
+  "resumed_from": "/home/mw/project/NEXUS_session4/checkpoints/tinylm_a800_t164_20260712T222913Z.pt",
   "train": {
-    "sec": 0.465,
+    "sec": 0.466,
     "steps": 500,
     "loss_curve": [
-      8.336238861083984,
-      8.348840713500977,
-      8.531037330627441,
-      8.542784690856934,
-      8.19942569732666,
-      8.513075828552246,
-      8.48038101196289,
-      8.3236665725708,
-      8.376178741455078,
-      8.379955291748047,
-      8.356550216674805
+      8.653267860412598,
+      8.352742195129395,
+      8.531826972961426,
+      8.495288848876953,
+      8.447935104370117,
+      8.391883850097656,
+      8.591506958007812,
+      8.4190034866333,
+      8.445459365844727,
+      8.383703231811523,
+      8.441903114318848
     ],
     "device": "cuda"
   },
-  "ckpt": "/home/mw/project/NEXUS_session4/checkpoints/tinylm_a800_t164_20260712T222913Z.pt",
+  "ckpt": "/home/mw/project/NEXUS_session4/checkpoints/tinylm_a800_t165_20260712T223102Z.pt",
   "ckpt_kept": 2,
-  "gh_upload": "0b2e140"
+  "gh_upload": "f9b374e"
 }
