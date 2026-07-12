@@ -1,6 +1,6 @@
 {
-  "stamp": "20260712T000303Z",
-  "tick": 76,
+  "stamp": "20260712T000710Z",
+  "tick": 77,
   "venue": "A800_scientist_v0.1",
   "cwd": "/home/mw/project",
   "train_steps": 500,
@@ -12,24 +12,24 @@
   "cuda": true,
   "gpu_name": "NVIDIA A800-SXM4-80GB",
   "train": {
-    "sec": 0.478,
+    "sec": 0.477,
     "steps": 500,
     "loss_curve": [
-      8.317028045654297,
-      8.297659873962402,
-      8.301514625549316,
-      8.305740356445312,
-      8.282052040100098,
-      8.372884750366211,
-      8.341611862182617,
-      8.322030067443848,
-      8.351436614990234,
-      8.379630088806152,
-      8.38499927520752
+      8.314888954162598,
+      8.336915016174316,
+      8.327842712402344,
+      8.304932594299316,
+      8.323380470275879,
+      8.34315299987793,
+      8.37760066986084,
+      8.311882972717285,
+      8.33001708984375,
+      8.336852073669434,
+      8.318926811218262
     ],
     "device": "cuda"
   },
-  "ckpt": "/home/mw/project/NEXUS_session4/checkpoints/tinylm_a800_t76_20260712T000303Z.pt",
+  "ckpt": "/home/mw/project/NEXUS_session4/checkpoints/tinylm_a800_t77_20260712T000710Z.pt",
   "/home/mw/project": {
     "exists": true,
     "n": 2,
@@ -63,14 +63,5 @@
     "stub": "/home/mw/project/NEXUS_session4/tokenhd/train_tokenhd_stub.py",
     "note": "scaffold only; full 0.6B after F-2"
   },
-  "gh_upload": "4badfde",
-  "gh_latest": "b0c3b97",
-  "suite_pull": {
-    "run_suite.py": "HTTP Error 502: Bad Gateway",
-    "hf_dataset_deep_search.py": "ok",
-    "build_nexus_sft_mix.py": "ok",
-    "train_and_stress.py": "ok",
-    "README.md": "ok"
-  },
-  "suite_exit": "skip_or_missing"
+  "gh_upload": "c62d04f"
 }
