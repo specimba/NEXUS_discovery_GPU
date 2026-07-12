@@ -1,0 +1,17 @@
+{
+  "controller": "phase_C_side",
+  "loop": 1,
+  "at": "2026-07-12T19:35:12.404Z",
+  "gh_tick": 119,
+  "gh_stamp": "20260712T192553Z",
+  "mode": "phase_A_kernel",
+  "cuda": true,
+  "gpu": "NVIDIA A800-SXM4-80GB",
+  "train_sec": 0.281,
+  "resumed_from": "/home/mw/project/NEXUS_session4/checkpoints/tinylm_a800_t118_20260712T191325Z.pt",
+  "age_sec": 559,
+  "stale": true,
+  "next_tick": 120,
+  "flow_spec": "NEXUS_A800_side_controller_slim",
+  "flow_id": "6a4bd74a653139b820097c4d"
+}
