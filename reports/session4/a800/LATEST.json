@@ -65,5 +65,14 @@
     "stub": "/home/mw/project/NEXUS_session4/tokenhd/train_tokenhd_stub.py",
     "note": "scaffold only; full 0.6B after F-2"
   },
-  "gh_upload": "0f92b37"
+  "gh_upload": "0f92b37",
+  "gh_latest": "c846e7e",
+  "suite_pull": {
+    "run_suite.py": "ok",
+    "hf_dataset_deep_search.py": "ok",
+    "build_nexus_sft_mix.py": "ok",
+    "train_and_stress.py": "ok",
+    "README.md": "ok"
+  },
+  "suite_err": "Command '['python3', '/home/mw/project/NEXUS_session4/scripts/nexus_cloud_suite/run_suite.py']' timed out after 45 seconds"
 }
