@@ -1,0 +1,36 @@
+{
+  "stamp": "20260713T063126Z",
+  "tick": 371,
+  "venue": "A800_scientist_v0.1",
+  "train_steps": 500,
+  "hf_set": true,
+  "token_set": true,
+  "mode": "calm_longrun",
+  "clean": true,
+  "host": "klab",
+  "nvidia_smi": "GPU 0: NVIDIA A800-SXM4-80GB (UUID: GPU-3df8ec45-ea04-9bde-3b6c-5c85409e9372)",
+  "torch": "2.6.0+cu124",
+  "cuda": true,
+  "gpu_name": "NVIDIA A800-SXM4-80GB",
+  "resumed_from": "/home/mw/project/NEXUS_session4/checkpoints/tinylm_a800_t370_20260713T062917Z.pt",
+  "train": {
+    "sec": 0.499,
+    "steps": 500,
+    "loss_curve": [
+      8.35759449005127,
+      8.653923034667969,
+      8.362468719482422,
+      8.293874740600586,
+      8.463220596313477,
+      8.425021171569824,
+      8.481619834899902,
+      8.453282356262207,
+      8.505936622619629,
+      8.396356582641602,
+      8.523477554321289
+    ],
+    "device": "cuda"
+  },
+  "ckpt": "/home/mw/project/NEXUS_session4/checkpoints/tinylm_a800_t371_20260713T063126Z.pt",
+  "ckpt_kept": 2
+}
