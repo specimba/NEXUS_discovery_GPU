@@ -185,6 +185,31 @@ def main() -> int:
                 print(f"step {step+1}/{STEPS} loss={lv:.4f}", flush=True)
             if device.type == "cuda" and step % 10 == 0:
                 torch.cuda.synchronize()
+            # Mid-run HF saves so long jobs leave artifacts before final step
+            save_flag = os.environ.get("NEXUS_DPO_SAVE", "").strip() in ("1", "true", "yes")
+            save_every = int(os.environ.get("NEXUS_DPO_SAVE_EVERY", "500"))
+            ckpt_dir = ROOT / "checkpoints/dpo_guard_v7_canary"
+            if save_flag and save_every > 0 and (step + 1) % save_every == 0:
+                mid = ckpt_dir / f"step_{step+1}_{STAMP}"
+                print("SAVE_MID", mid, flush=True)
+                try:
+                    ckpt_dir.mkdir(parents=True, exist_ok=True)
+                    model.save_pretrained(str(mid))
+                    tok.save_pretrained(str(mid))
+                    (mid / "train_metrics.json").write_text(
+                        json.dumps(
+                            {
+                                "step": step + 1,
+                                "loss": lv,
+                                "loss_mean": sum(losses) / len(losses),
+                            },
+                            indent=2,
+                        ),
+                        encoding="utf-8",
+                    )
+                    (ckpt_dir / "LATEST_CKPT.txt").write_text(str(mid), encoding="utf-8")
+                except Exception as se:
+                    print("SAVE_MID_FAIL", repr(se), flush=True)
         if device.type == "cuda":
             torch.cuda.synchronize()
         train["train_sec"] = round(time.time() - t0, 2)
@@ -207,6 +232,7 @@ def main() -> int:
                     "metrics": train["metrics"],
                     "trainer_api": "manual_dpo_auto_continue",
                     "pairs": train.get("pairs"),
+                    "dpo_path": out.get("dpo_path"),
                 },
                 indent=2,
             ),
