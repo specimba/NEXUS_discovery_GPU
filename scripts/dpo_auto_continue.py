@@ -117,7 +117,8 @@ def main() -> int:
                             "rejected": str(o["rejected"]),
                         }
                     )
-                if len(pairs) >= max(STEPS * 2, 40):
+                # Prefer full gold set; only cap if huge
+                if len(pairs) >= max(STEPS * 4, 500):
                     break
         train["pairs"] = len(pairs)
         if len(pairs) < 4:
@@ -181,7 +182,9 @@ def main() -> int:
             "finite": all(math.isfinite(x) for x in losses),
         }
         train["ok"] = bool(train["metrics"]["finite"] and len(losses) == STEPS)
-        (ROOT / "checkpoints/dpo_guard_v7_canary/dryrun_ok.json").write_text(
+        ckpt_dir = ROOT / "checkpoints/dpo_guard_v7_canary"
+        ckpt_dir.mkdir(parents=True, exist_ok=True)
+        (ckpt_dir / "dryrun_ok.json").write_text(
             json.dumps(
                 {
                     "stamp": STAMP,
@@ -189,11 +192,29 @@ def main() -> int:
                     "steps": STEPS,
                     "metrics": train["metrics"],
                     "trainer_api": "manual_dpo_auto_continue",
+                    "pairs": train.get("pairs"),
                 },
                 indent=2,
             ),
             encoding="utf-8",
         )
+        # Optional HF weight save (longer runs / explicit flag)
+        save_flag = os.environ.get("NEXUS_DPO_SAVE", "").strip() in ("1", "true", "yes")
+        if train["ok"] and (save_flag or STEPS >= 200):
+            save_path = ckpt_dir / f"step_{STEPS}_{STAMP}"
+            print("SAVE_PRETRAINED", save_path, flush=True)
+            try:
+                model.save_pretrained(str(save_path))
+                tok.save_pretrained(str(save_path))
+                (save_path / "train_metrics.json").write_text(
+                    json.dumps(train["metrics"], indent=2), encoding="utf-8"
+                )
+                train["saved"] = str(save_path)
+                # pointer for resume
+                (ckpt_dir / "LATEST_CKPT.txt").write_text(str(save_path), encoding="utf-8")
+            except Exception as se:
+                train["save_error"] = repr(se)
+                print("SAVE_FAIL", repr(se), flush=True)
     except Exception as e:
         train["ok"] = False
         train["error"] = repr(e)
