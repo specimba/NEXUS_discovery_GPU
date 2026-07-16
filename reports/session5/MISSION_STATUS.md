@@ -51,3 +51,6 @@ https://discovery-notebook-p.intern-ai.org.cn/notebook/81100172/nb-253ef43eacdbe
 - Mid-run nvidia-smi (nudge): **51% util · ~6495 MiB** — discovery should show load during job
 - Checkpoints still only **step_200_*** — SAVE path needs fix for step_300/500 dirs
 - Monaco harvest flaky; terminal SoT
+
+### Auto wave 20260716T170121Z
+- wave **W6a590a5c** · DPO_DRYRUN **300 GREEN** loss 0.816→0.299 mean 0.689 finite · dpo_lines=150 · A100 · ckpts still step_200 only
