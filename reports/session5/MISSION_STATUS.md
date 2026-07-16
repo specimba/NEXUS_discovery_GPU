@@ -20,3 +20,6 @@
 
 ## Code
 https://discovery-notebook-p.intern-ai.org.cn/notebook/81100172/nb-253ef43eacdbe4e480503d693d5026ed/code/?folder=/data/NEXUS
+
+### Auto wave 20260716T151829Z
+- wave **W6a58f219** steps=100 shell OK · dpo_lines=150 · torch 2.4.0+cu124 · A100 · error null · ckpts retained
