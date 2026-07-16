@@ -1,0 +1,29 @@
+{
+  "stamp": "20260716T145518Z",
+  "phase": "dl_install_long",
+  "ok": true,
+  "skip": ["google_login", "vincent_login"],
+  "download": {
+    "phase_script_bytes": 8938,
+    "dpo_auto_continue_bytes": 11239,
+    "dpo_lines": 150,
+    "source": "cdn.jsdelivr.net/gh/specimba/NEXUS_discovery_GPU@b82e497"
+  },
+  "install": {
+    "torch": "2.4.0+cu124",
+    "gpu": "NVIDIA A100-SXM4-80GB",
+    "transformers_pin": "4.46.3 when DTensor missing",
+    "trl": "not_installed_forbidden"
+  },
+  "train": {
+    "steps": 200,
+    "save": true,
+    "checkpoints": [
+      "/data/NEXUS/checkpoints/dpo_guard_v7_canary/step_200_20260716T144911Z",
+      "/data/NEXUS/checkpoints/dpo_guard_v7_canary/step_200_20260716T145518Z"
+    ],
+    "latest_ckpt_pointer": "LATEST_CKPT.txt",
+    "process_alive_after": 0
+  },
+  "notes": "Google Sign-in error banner ignored. Workspace-as-file toast is cosmetic (dir exists)."
+}

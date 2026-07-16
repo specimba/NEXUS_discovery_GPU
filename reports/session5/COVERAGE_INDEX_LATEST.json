@@ -1,5 +1,5 @@
 {
-  "stamp": "20260716T135923Z",
+  "stamp": "20260716T145518Z",
   "nb": "nb-253ef43eacdbe4e480503d693d5026ed",
   "dpo_lines": 150,
   "torch": "2.4.0+cu124",
@@ -29,8 +29,20 @@
         "steps": 100,
         "finite": true
       }
+    },
+    {
+      "steps": 200,
+      "ok": true,
+      "saved": true,
+      "checkpoints": [
+        "step_200_20260716T144911Z",
+        "step_200_20260716T145518Z"
+      ],
+      "evidence": "terminal screenshot ls checkpoints + L200_REPORT CAPTURE_DONE"
     }
   ],
-  "plan": "auto_continue",
-  "github": "https://github.com/specimba/NEXUS_discovery_GPU"
+  "phase": "dl_install_long_L200",
+  "policy": "skip_google_vincent",
+  "github": "https://github.com/specimba/NEXUS_discovery_GPU",
+  "commit_pin": "b82e497"
 }

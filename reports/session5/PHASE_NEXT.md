@@ -14,14 +14,18 @@
 | transformers pin if no DTensor | DONE |
 | Smoke 20 / scale 50 / scale 100 | DONE (finite losses) |
 | TRL-free manual DPO | DONE |
+| Download refresh (pin b82e497) | DONE — 150 pairs + scripts |
+| Install verify (no trl) | DONE |
+| Longer DPO 200 + save | DONE — two ckpts `step_200_20260716T144911Z` + `T145518Z` |
+| LATEST_CKPT pointer | DONE |
+| Coverage mirror session5 | DONE (this push) |
 
-## In progress / next (NEXUS-related)
-1. **Download refresh** — re-pull gold + scripts + configs via jsDelivr/ghproxy
-2. **Install verify** — torch/cuda/gpu inventory; pin transformers==4.46.3; accelerate; **no trl 1.x**
-3. **Longer DPO** — 200 steps with `NEXUS_DPO_SAVE=1` → `checkpoints/dpo_guard_v7_canary/step_200_*`
-4. **Checkpoint pointer** — `LATEST_CKPT.txt`
-5. **Coverage mirror** — PHASE_LATEST / COVERAGE / MISSION → GitHub `reports/session5`
-6. **Later** — 500-step stretch; SCP guard skill probes when hub auth works
+## Next (NEXUS-related)
+1. **500-step stretch** with save + loss curve log
+2. **Optional** small eval prompt set vs base model
+3. **SCP guard skills** only when hub auth works (do not block train)
+4. Keep ignoring Google / Vincent
+
 
 ## Host automation
 ```text
