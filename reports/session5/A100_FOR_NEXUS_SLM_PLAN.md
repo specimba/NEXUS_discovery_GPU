@@ -28,7 +28,7 @@ Local 8GB card (always the product):
 
 **Fable5 insight to steal (not the model weights):** classifier-routing safety  
 (main SLM → safety classifiers → fallback) maps to NEXUS **guard voters outside the task SLM**, not “one big censored model.”  
-**License law:** HelioAI/Fable-5-Distill & Claude/GPT-derived corpora = **reference-only**; train only permissive + operator-owned pairs.
+**Trace law (revised):** Fable/Sol/Claude/GPT **session traces from our paid usage** and NEXUS logs = **first-class** student fuel. Closed **weight clones** stay research-sensitive; default product path = distill into **permissive SLM students**. Full merge/tool factory plan: `A100_80GB_MERGE_TOOL_FACTORY_PLAN.md`.
 
 ---
 
