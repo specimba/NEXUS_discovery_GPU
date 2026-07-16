@@ -54,3 +54,6 @@ https://discovery-notebook-p.intern-ai.org.cn/notebook/81100172/nb-253ef43eacdbe
 
 ### Auto wave 20260716T170121Z
 - wave **W6a590a5c** · DPO_DRYRUN **300 GREEN** loss 0.816→0.299 mean 0.689 finite · dpo_lines=150 · A100 · ckpts still step_200 only
+
+### Auto wave 20260716T172227Z
+- wave **W6a590f0e** · **100 GREEN** loss 0.816→0.781 mean 0.802 finite · stamp 20260716T170426Z · dpo 150 · A100

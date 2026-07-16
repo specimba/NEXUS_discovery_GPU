@@ -1,17 +1,16 @@
 {
-  "stamp": "20260716T170121Z",
-  "wave": "W6a590a5c",
+  "stamp": "20260716T172227Z",
+  "wave": "W6a590f0e",
   "ok": true,
-  "dpo_max_steps_latest": 300,
+  "max_steps": 100,
   "metrics": {
     "loss_start": 0.81640625,
-    "loss_end": 0.298828125,
-    "loss_mean": 0.6888346354166667,
-    "steps": 300,
+    "loss_end": 0.78125,
+    "loss_mean": 0.80234375,
+    "steps": 100,
     "finite": true
   },
   "gpu": "NVIDIA A100-SXM4-80GB",
   "dpo_lines": 150,
-  "checkpoint_gap": "step_200 only",
   "policy": "skip_google_vincent"
 }
