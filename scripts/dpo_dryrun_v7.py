@@ -104,11 +104,30 @@ def main() -> int:
     latest = WORK / "DPO_DRYRUN_LATEST.json"
 
     def flush() -> None:
-        result_path.write_text(json.dumps(report, indent=2), encoding="utf-8")
-        latest.write_text(json.dumps(report, indent=2), encoding="utf-8")
-        (LOGS / "DPO_DRYRUN_LATEST.json").write_text(
-            json.dumps(report, indent=2), encoding="utf-8"
-        )
+        text = json.dumps(report, indent=2, default=str)
+        result_path.write_text(text, encoding="utf-8")
+        latest.write_text(text, encoding="utf-8")
+        (LOGS / "DPO_DRYRUN_LATEST.json").write_text(text, encoding="utf-8")
+        # short unique dump for CDP monaco harvest (avoid fuzzy-open collisions)
+        brief = {
+            "stamp": report.get("stamp"),
+            "phase": report.get("phase"),
+            "ok": report.get("ok"),
+            "dpo_lines": report.get("dpo_lines"),
+            "hf_whoami": report.get("hf_whoami"),
+            "hf_whoami_err": report.get("hf_whoami_err"),
+            "versions": report.get("versions"),
+            "torch": report.get("torch"),
+            "gpu": report.get("gpu"),
+            "trainer_api": report.get("trainer_api"),
+            "metrics": report.get("metrics"),
+            "train_sec": report.get("train_sec"),
+            "error": report.get("error"),
+            "train_err_tail": (report.get("train_err") or "")[-1200:],
+            "trace_tail": (report.get("trace") or "")[-800:],
+        }
+        (WORK / "DPO_ERR.txt").write_text(json.dumps(brief, indent=2, default=str), encoding="utf-8")
+        (LOGS / "DPO_ERR.txt").write_text(json.dumps(brief, indent=2, default=str), encoding="utf-8")
 
     try:
         import torch
