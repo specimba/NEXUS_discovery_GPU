@@ -58,6 +58,34 @@ def main() -> int:
             os.environ["HF_TOKEN"] = t
             os.environ["HUGGING_FACE_HUB_TOKEN"] = t
 
+        # transformers 5.14+ imports DTensor (needs torch>=2.5). Stack freeze is 2.4 —
+        # pin transformers if DTensor missing.
+        try:
+            from torch.distributed.tensor import DTensor  # noqa: F401
+        except Exception:
+            print("PIN transformers for torch2.4 (no DTensor)", flush=True)
+            import subprocess
+
+            subprocess.check_call(
+                [
+                    sys.executable,
+                    "-m",
+                    "pip",
+                    "install",
+                    "-q",
+                    "transformers==4.46.3",
+                    "--upgrade-strategy",
+                    "only-if-needed",
+                ]
+            )
+            # re-import
+            import importlib
+
+            import transformers as _tf
+
+            importlib.reload(_tf)
+            from transformers import AutoModelForCausalLM, AutoTokenizer
+
         print("LOAD", MODEL, flush=True)
         tok = AutoTokenizer.from_pretrained(MODEL, trust_remote_code=True)
         if tok.pad_token is None:
