@@ -317,12 +317,21 @@ def main() -> int:
         cov = {
             "stamp": STAMP,
             "dpo_lines": n_lines,
-            "dpo_bytes": report["dpo_bytes"],
+            "dpo_bytes": report.get("dpo_bytes"),
             "dryrun_ok": trained,
+            "phase": report.get("phase"),
             "hf_whoami": report.get("hf_whoami"),
+            "hf_whoami_err": report.get("hf_whoami_err"),
+            "versions": report.get("versions"),
+            "torch": report.get("torch"),
             "gpu": report.get("gpu"),
             "model": MODEL,
             "max_steps": MAX_STEPS,
+            "trainer_api": report.get("trainer_api"),
+            "metrics": report.get("metrics"),
+            "train_sec": report.get("train_sec"),
+            "error": report.get("error"),
+            "train_err_tail": (report.get("train_err") or "")[-900:],
             "log": str(result_path),
         }
         (WORK / "COVERAGE_INDEX_LATEST.json").write_text(
