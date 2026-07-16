@@ -1,0 +1,26 @@
+{
+  "harvest_flags": {
+    "dryrun_ok": true,
+    "whoami": true,
+    "phase": "done"
+  },
+  "stamp": "20260716T023534Z",
+  "dryrun_ok": true,
+  "hf_whoami": {
+    "name": "specimba",
+    "type": "user"
+  },
+  "dpo_lines": 150,
+  "torch": "2.4.0+cu124",
+  "gpu": "NVIDIA A100-SXM4-80GB",
+  "trainer_api": "manual_dpo_torch24",
+  "metrics": {
+    "loss_start": 0.81640625,
+    "loss_end": 0.78125,
+    "loss_mean": 0.8330078125,
+    "steps": 20,
+    "finite": true
+  },
+  "train_sec": 3.42,
+  "model": "Qwen/Qwen2.5-0.5B-Instruct"
+}

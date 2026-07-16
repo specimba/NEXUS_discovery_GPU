@@ -1,14 +1,32 @@
 {
-  "stamp": "20260716T014813Z",
+  "stamp": "20260716T023534Z",
   "host": "nb-582b5f51",
   "gpu": "NVIDIA A100-SXM4-80GB",
+  "torch": "2.4.0+cu124",
   "dpo_lines": 150,
   "dpo_bytes": 466574,
-  "cfg_bytes": 980,
-  "source_dpo": "https://cdn.jsdelivr.net/gh/specimba/NEXUS_discovery_GPU@main/datasets/nexus_local/v7_dpo_pairs_fixed.jsonl",
-  "source_cfg": "https://cdn.jsdelivr.net/gh/specimba/NEXUS_discovery_GPU@main/configs/dpo_a100_guard_v7.yaml",
-  "stage": "gold_v8",
-  "stage_ok": true,
-  "next": "dpo_dryrun_v7 max_steps=20",
-  "github": "https://github.com/specimba/NEXUS_discovery_GPU"
+  "dryrun_ok": true,
+  "phase": "done",
+  "hf_whoami": {
+    "name": "specimba",
+    "type": "user"
+  },
+  "versions": {
+    "transformers": "5.13.1",
+    "datasets": "5.0.0"
+  },
+  "model": "Qwen/Qwen2.5-0.5B-Instruct",
+  "max_steps": 20,
+  "trainer_api": "manual_dpo_torch24",
+  "metrics": {
+    "loss_start": 0.81640625,
+    "loss_end": 0.78125,
+    "loss_mean": 0.8330078125,
+    "steps": 20,
+    "finite": true
+  },
+  "train_sec": 3.42,
+  "notes": "trl 1.8 blocked by FSDPModule on torch 2.4 — used TRL-free manual DPO loss; stack freeze held",
+  "github": "https://github.com/specimba/NEXUS_discovery_GPU",
+  "log": "/data/NEXUS/logs/DPO_DRYRUN_20260716T023534Z.json"
 }

@@ -1,8 +1,9 @@
 # SESSION_PROGRESS_LATEST
 
-- **20260716T014700Z** — continue A100 train track; OCR parked
-- **Save points:** commits `9a611d5` longrun+DPO gold, `30c42d5` shots backup
-- **Remote:** A100 confirmed; COVERAGE still `dpo_lines: 21` (canary from longrun v6/v7)
-- **GitHub gold:** verified HTTP 200, 150 lines, 466574 bytes
-- **Root cause hypothesis:** `raw.githubusercontent.com` unreliable from CN; switch to jsDelivr multi-mirror
-- **Next:** run `intern_stage_gold_v8.mjs` → verify STAGE_GOLD_OK / dpo_lines 150 → HF whoami + deps + 20-step DPO dry-run → push logs
+- **20260716T023534Z** — A100 train track milestone complete
+- **Staged DPO gold:** 150 lines via jsDelivr (CN multi-mirror)
+- **HF whoami:** specimba
+- **DPO dry-run 20 steps:** OK (manual_dpo_torch24, finite losses, torch 2.4 freeze held)
+- **Blocker resolved:** trl 1.8 / FSDPModule vs torch 2.4 → skip trl, manual DPO loss
+- **Git save points:** df07107 multi-mirror, 637b2a5 gold staged, f09f947 TRL-free dryrun, (this commit) results
+- **Next optional:** longer DPO run, scale model past 0.5B, pin trl when torch upgrades

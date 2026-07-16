@@ -2,18 +2,25 @@
 
 ## Done
 
-- Local OCR path parked; continuity facts wired earlier
-- GitHub `NEXUS_discovery_GPU` holds gold DPO + `dpo_a100_guard_v7.yaml`
-- Longrun CDP wrote durable workspace files on JuiceFS (`MISSION_STATUS`, `COVERAGE`, logs)
-- Env: A100 80GB, torch 2.4.0+cu124, HF_TOKEN_FILE=yes
+- Gold DPO staged on JuiceFS: **150 lines** (jsDelivr; raw.githubusercontent.com unreliable from CN)
+- HF whoami: **specimba**
+- DPO dry-run **max_steps=20** complete under torch **2.4.0+cu124**
+- Trainer: **manual_dpo_torch24** (TRL-free after trl 1.8 FSDPModule import fail)
+- Metrics: loss_start 0.816 → loss_end 0.781, mean 0.833, finite, 3.42s
+- OCR parked; CDP automation self-drive (no paste prompts)
 
-## In progress
+## Artifacts
 
-- Stage full 150-line DPO onto `/data/NEXUS/datasets/nexus_local/` via multi-mirror (jsDelivr first)
-- Then: HF whoami, install missing trl/peft if needed, DPO dry-run 20 steps
+- `/data/NEXUS/datasets/nexus_local/v7_dpo_pairs_fixed.jsonl`
+- `/data/NEXUS/configs/dpo_a100_guard_v7.yaml`
+- `/data/NEXUS/logs/DPO_DRYRUN_20260716T023534Z.json`
+- `/data/NEXUS/checkpoints/dpo_guard_v7_canary/dryrun_ok.json`
+- GitHub: https://github.com/specimba/NEXUS_discovery_GPU
 
-## Blockers / notes
+## Commits this session (main)
 
-- CDP terminal focus flaky when Cline steals Input.insertText
-- Prefer: Terminal: Focus Terminal + single base64|python shot
-- Prefer CDN mirrors over raw.githubusercontent.com from China hosts
+- multi-mirror stage + gold_v8 CDP
+- gold staged (150) + dryrun script
+- DPO_ERR / COVERAGE error fields
+- TRL-free dryrun for torch 2.4 freeze
+- this results backup
