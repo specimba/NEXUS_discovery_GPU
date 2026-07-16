@@ -57,3 +57,8 @@ https://discovery-notebook-p.intern-ai.org.cn/notebook/81100172/nb-253ef43eacdbe
 
 ### Auto wave 20260716T172227Z
 - wave **W6a590f0e** · **100 GREEN** loss 0.816→0.781 mean 0.802 finite · stamp 20260716T170426Z · dpo 150 · A100
+
+### REAL_2000 20260716T174909Z
+- **Continuous job live:** 2000 steps SAVE=1, log `REAL_2000.log`, PID ~41545
+- Progress seen through ~**601/2000**, loss dropping (~0.02)
+- Prior 0% discovery util was because canaries were short; this run is multi-minute

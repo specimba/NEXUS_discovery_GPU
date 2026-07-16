@@ -1,0 +1,14 @@
+{
+  "stamp": "20260716T174909Z",
+  "action": "REAL_2000_STARTED_AND_RUNNING",
+  "cmd": "NEXUS_DPO_MAX_STEPS=2000 NEXUS_DPO_SAVE=1 python3 /data/NEXUS/scripts/dpo_auto_continue.py",
+  "log": "/data/NEXUS/logs/REAL_2000.log",
+  "pid_seen": 41545,
+  "progress_seen": "step ~601/2000 loss~0.02 (screenshot make_gpu_final)",
+  "note": "Discovery monitor may lag; nvidia process + step log is proof. Short 100-step waves are theatre \u2014 this is continuous.",
+  "proof_screens": [
+    "make_gpu_02_ps.png STARTED_PID_41545",
+    "make_gpu_snap_5.png steps 191-261/2000",
+    "make_gpu_final.png steps 581-601/2000 still running"
+  ]
+}
