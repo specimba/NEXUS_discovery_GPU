@@ -1,14 +1,11 @@
 {
-  "stamp": "20260716T160554Z",
-  "event": "L500_COMPLETE",
+  "stamp": "20260716T162342Z",
+  "wave": "W6a59018f",
   "ok": true,
-  "steps": 500,
-  "metrics_terminal_tail": {
-    "step": "500/500",
-    "loss_end_approx": 0.0723,
-    "finite": true,
-    "AUTO_CONTINUE_DONE": true
-  },
-  "log": "cline_long_500.log",
+  "steps_requested": 100,
+  "long_500d_progress": "~481/500 loss~0.056",
+  "dpo_lines": 150,
+  "torch": "2.4.0+cu124",
+  "gpu": "NVIDIA A100-SXM4-80GB",
   "policy": "skip_google_vincent"
 }

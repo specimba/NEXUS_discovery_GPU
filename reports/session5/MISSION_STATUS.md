@@ -42,3 +42,6 @@ https://discovery-notebook-p.intern-ai.org.cn/notebook/81100172/nb-253ef43eacdbe
 - loss end ~0.05–0.07 finite (tail steps 471–500)
 - log: `/data/NEXUS/logs/cline_long_500.log`
 - ladder: 20→50→100→200→300→**500**
+
+### Auto wave 20260716T162342Z
+- wave **W6a59018f** (monaco flaky) · **500d canary ~481/500** loss≈0.056 finite · log `cline_long_500d.log`
