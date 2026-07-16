@@ -45,3 +45,9 @@ https://discovery-notebook-p.intern-ai.org.cn/notebook/81100172/nb-253ef43eacdbe
 
 ### Auto wave 20260716T162342Z
 - wave **W6a59018f** (monaco flaky) · **500d canary ~481/500** loss≈0.056 finite · log `cline_long_500d.log`
+
+### Auto wave 20260716T164317Z (W6a5905b9)
+- Latest DPO_DRYRUN: **300 steps GREEN** finite, loss 0.816→**0.299** mean 0.689 (stamp 20260716T164036Z)
+- Mid-run nvidia-smi (nudge): **51% util · ~6495 MiB** — discovery should show load during job
+- Checkpoints still only **step_200_*** — SAVE path needs fix for step_300/500 dirs
+- Monaco harvest flaky; terminal SoT
