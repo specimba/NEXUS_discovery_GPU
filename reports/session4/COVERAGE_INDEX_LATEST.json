@@ -1,18 +1,19 @@
 {
-  "stamp": "20260716T090530Z",
-  "agent": "kilo_collab",
-  "mode": "term_collab",
-  "policy": "no_cline_no_vincent",
+  "stamp": "20260716T095742Z",
+  "event": "post_refresh_verify",
+  "session_remaining_user": "~9h",
   "dpo_lines": 150,
-  "dryrun_marker": true,
+  "dpo_bytes": 466574,
   "torch": "2.4.0+cu124",
   "gpu": "NVIDIA A100-SXM4-80GB",
-  "next": [
-    "kilo_primary",
-    "torch_freeze_2.4",
-    "no_trl_1x",
-    "await_compute_topup"
-  ],
-  "code_url": "https://discovery-notebook-p.intern-ai.org.cn/notebook/60400422/nb-582b5f51afb6b085773ce464c2654850/code/?folder=/data/NEXUS/workspace",
+  "dryrun_ok_file": true,
+  "stage_gold": "gold_v8 STAGE_GOLD_OK",
+  "packages_seen": {
+    "torch": "2.4.0+cu124",
+    "transformers": "5.14.0",
+    "datasets": "5.0.0",
+    "huggingface_hub": "1.23.0"
+  },
+  "last_plan": "diag_retry_50 train_rc=1 (need error log; data not lost)",
   "github": "https://github.com/specimba/NEXUS_discovery_GPU"
 }
