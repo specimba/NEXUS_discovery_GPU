@@ -1,23 +1,18 @@
 {
-  "stamp": "20260716T083005Z",
-  "host": "nb-582b5f51",
-  "mode": "existing_tab_state",
+  "stamp": "20260716T090530Z",
+  "agent": "kilo_collab",
+  "mode": "term_collab",
+  "policy": "no_cline_no_vincent",
   "dpo_lines": 150,
-  "dpo_bytes": 466574,
-  "torch": "2.4.0+cu124",
-  "cuda": true,
-  "gpu": "NVIDIA A100-SXM4-80GB",
   "dryrun_marker": true,
-  "extensions_n": 15,
-  "extensions_seen": [
-    "kilocode.kilo-code",
-    "ms-python.python",
-    "ms-python.debugpy",
-    "ms-toolsai / jupyter family",
-    "cloudstudio.jupyter-server-provider"
+  "torch": "2.4.0+cu124",
+  "gpu": "NVIDIA A100-SXM4-80GB",
+  "next": [
+    "kilo_primary",
+    "torch_freeze_2.4",
+    "no_trl_1x",
+    "await_compute_topup"
   ],
-  "policy": "no_reload_no_new_tab; low_bw; no heavy pip/cuda reinstall; jsDelivr mirrors",
-  "compute_note": "user reported 4996/5000 points used; more applied",
   "code_url": "https://discovery-notebook-p.intern-ai.org.cn/notebook/60400422/nb-582b5f51afb6b085773ce464c2654850/code/?folder=/data/NEXUS/workspace",
   "github": "https://github.com/specimba/NEXUS_discovery_GPU"
 }
