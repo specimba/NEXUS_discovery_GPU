@@ -31,3 +31,8 @@ https://discovery-notebook-p.intern-ai.org.cn/notebook/81100172/nb-253ef43eacdbe
 - UI loaded; Cline+Kilo healthy
 - WAVE_SHELL green; 300 done; 500 log present — continue progression
 - Methods brief + KILO_METHODS_NEXT on GitHub
+
+### Auto wave 20260716T160347Z
+- wave **W6a58fcba** steps=100 GREEN finite (loss 0.816→0.781 mean 0.802)
+- **500-step long train running** (~351/500, loss≈0.176) log `cline_long_500.log`
+- Monaco QQ harvest flaky; terminal screenshot = SoT

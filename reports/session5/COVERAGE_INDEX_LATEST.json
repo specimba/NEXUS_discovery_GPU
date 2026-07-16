@@ -1,5 +1,5 @@
 {
-  "stamp": "20260716T151829Z",
+  "stamp": "20260716T160347Z",
   "nb": "nb-253ef43eacdbe4e480503d693d5026ed",
   "dpo_lines": 150,
   "torch": "2.4.0+cu124",
@@ -46,22 +46,27 @@
   "github": "https://github.com/specimba/NEXUS_discovery_GPU",
   "commit_pin": "b82e497",
   "last_auto_wave": {
-    "stamp": "20260716T151829Z",
-    "wave": "W6a58f219",
+    "stamp": "20260716T160347Z",
+    "wave": "W6a58fcba",
     "ok": true,
     "steps_requested": 100,
+    "metrics": {
+      "loss_start": 0.81640625,
+      "loss_end": 0.78125,
+      "loss_mean": 0.8023828125,
+      "steps": 100,
+      "finite": true
+    },
     "dpo_lines": 150,
     "torch": "2.4.0+cu124",
     "gpu": "NVIDIA A100-SXM4-80GB",
-    "error": null,
-    "wave_shell": true,
-    "checkpoints_present": [
-      "LATEST_CKPT.txt",
-      "dryrun_ok.json",
-      "step_200_20260716T144911Z",
-      "step_200_20260716T145518Z"
-    ],
-    "policy": "skip_google_vincent",
-    "note": "auto wave scheduled; monaco QQ harvest flaky; terminal screenshot is source of truth"
+    "long_500": "running ~351/500 loss~0.18",
+    "policy": "skip_google_vincent"
+  },
+  "long_500_progress": {
+    "running": true,
+    "tail": "step 351/500 loss=0.1758",
+    "pid": 26884,
+    "log": "cline_long_500.log"
   }
 }

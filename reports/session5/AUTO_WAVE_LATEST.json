@@ -1,11 +1,18 @@
 {
-  "stamp": "20260716T154147Z",
-  "wave": "W6a58f78e",
+  "stamp": "20260716T160347Z",
+  "wave": "W6a58fcba",
   "ok": true,
   "steps_requested": 100,
+  "metrics": {
+    "loss_start": 0.81640625,
+    "loss_end": 0.78125,
+    "loss_mean": 0.8023828125,
+    "steps": 100,
+    "finite": true
+  },
   "dpo_lines": 150,
   "torch": "2.4.0+cu124",
   "gpu": "NVIDIA A100-SXM4-80GB",
-  "harvest_note": "monaco ok=true; preview stamp may be stale 20-step PLAN_PROGRESS buffer; dpo_150 true; terminal post-dump screenshot saved",
+  "long_500": "running ~351/500 loss~0.18",
   "policy": "skip_google_vincent"
 }
