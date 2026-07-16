@@ -1,20 +1,22 @@
 {
-  "stamp": "20260716T104644Z",
+  "stamp": "20260716T110039Z",
   "dpo_lines": 150,
-  "dpo_bytes": 466574,
   "torch": "2.4.0+cu124",
   "gpu": "NVIDIA A100-SXM4-80GB",
   "dryrun_ok": true,
-  "max_steps": 50,
-  "metrics": {
-    "loss_start": 0.81640625,
-    "loss_end": 0.80078125,
-    "loss_mean": 0.825625,
-    "steps": 50,
-    "finite": true
+  "max_steps": 100,
+  "metrics_observed_in_mission_poll": {
+    "note": "MISSION_STATUS GREEN max_steps=100 ok=True seen in live poll at ~45s of FAST100 run",
+    "prior_50": {
+      "stamp": "20260716T104644Z",
+      "loss_start": 0.81640625,
+      "loss_end": 0.80078125,
+      "loss_mean": 0.825625,
+      "steps": 50,
+      "finite": true
+    }
   },
-  "error": null,
-  "plan": "auto_continue",
-  "fix_applied": "pin transformers==4.46.3 when DTensor missing (torch 2.4 freeze)",
+  "session_note": "After 100-step success poll, code-server returned HTTP 403; inside panel showed GPU/CPU dash. JuiceFS should retain files when VM re-enters.",
+  "plan": "auto_continue_100",
   "github": "https://github.com/specimba/NEXUS_discovery_GPU"
 }
