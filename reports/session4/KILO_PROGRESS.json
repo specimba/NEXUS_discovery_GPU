@@ -1,0 +1,10 @@
+{
+  "stamp": "20260716T091355Z",
+  "marker": "NEXUS_KILO_REAL_0912",
+  "dpo_lines": 150,
+  "torch": "2.4.0+cu124",
+  "dryrun": true,
+  "agent": "kilo_real_send",
+  "verified": "prompt visible in Kilo chat; MISSION_STATUS rewritten with marker",
+  "note": "Prior automation failed because JS claimed send without Kilo body containing the user turn"
+}
