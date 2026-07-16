@@ -1,0 +1,31 @@
+{
+  "stamp": "20260716T014813Z",
+  "dpo_lines": 150,
+  "dpo_bytes": 466574,
+  "cfg_bytes": 980,
+  "source_dpo": "https://cdn.jsdelivr.net/gh/specimba/NEXUS_discovery_GPU@main/datasets/nexus_local/v7_dpo_pairs_fixed.jsonl",
+  "source_cfg": "https://cdn.jsdelivr.net/gh/specimba/NEXUS_discovery_GPU@main/configs/dpo_a100_guard_v7.yaml",
+  "gpu": "NVIDIA A100-SXM4-80GB",
+  "host": "nb-582b5f51",
+  "stage": "gold_v8"
+}
+(root/'logs').mkdir(parents=True, exist_ok=True)
+(root/'workspace').mkdir(parents=True, exist_ok=True)
+base = 'https://raw.githubusercontent.com/specimba/NEXUS_discovery_GPU/main'
+files = {
+  root/'datasets/nexus_local/v7_dpo_pairs_fixed.jsonl': base + '/datasets/nexus_local/v7_dpo_pairs_fixed.jsonl',
+    root/'configs/dpo_a100_guard_v7.yaml': base + '/configs/dpo_a100_guard_v7.yaml',
+      root/'workspace/MISSION_STATUS.md': base + '/reports/session4/MISSION_STATUS.md',
+        root/'workspace/SESSION_PROGRESS_LATEST.md': base + '/reports/session4/SESSION_PROGRESS_LATEST.md',
+        }
+        for dest, url in files.items():
+            print('GET', url)
+                urllib.request.urlretrieve(url, dest)
+                    print('OK', dest, dest.stat().st_size)
+                    dpo = root/'datasets/nexus_local/v7_dpo_pairs_fixed.jsonl'
+                    n = sum(1 for _ in dpo.open())
+                    idx = {'stamp': time.strftime('%Y%m%dT%H%M%SZ', time.gmtime()), 'dpo_lines': n, 'dpo_bytes': dpo.stat().st_size, 'source': 'github_main', 'gpu': 'NVIDIA A100-SXM4-80GB'}
+                    (root/'workspace'/'COVERAGE_INDEX_LATEST.json').write_text(json.dumps(idx, indent=2), encoding='utf-8')
+                    (root/'logs'/'COVERAGE_INDEX_LATEST.json').write_text(json.dumps(idx, indent=2), encoding='utf-8')
+                    print('STAGE_OK', idx)
+                    print('NB_STAGE_COMPLETE')

@@ -1,0 +1,11 @@
+{
+  "status": "ok",
+  "gold_ok": true,
+  "lines_150": true,
+  "jsdelivr": true,
+  "v8_done": false,
+  "stage_chars": 1847,
+  "cov_chars": 1847,
+  "stage_preview": "{\n  \"stamp\": \"20260716T014813Z\",\n  \"dpo_lines\": 150,\n  \"dpo_bytes\": 466574,\n  \"cfg_bytes\": 980,\n  \"source_dpo\": \"https://cdn.jsdelivr.net/gh/specimba/NEXUS_discovery_GPU@main/datasets/nexus_local/v7_dpo_pairs_fixed.jsonl\",\n  \"source_cfg\": \"https://cdn.jsdelivr.net/gh/specimba/NEXUS_discovery_GPU@main/configs/dpo_a100_guard_v7.yaml\",\n  \"gpu\": \"NVIDIA A100-SXM4-80GB\",\n  \"host\": \"nb-582b5f51\",\n  \"stage\": \"gold_v8\"\n}\n(root/'logs').mkdir(parents=True, exist_ok=True)\n(root/'workspace').mkdir(parents=True, exist_ok=True)\nbase = 'https://raw.githubusercontent.com/specimba/NEXUS_discovery_GPU/main'\nfiles = {\n  root/'datasets/nexus_local/v7_dpo_pairs_fixed.jsonl': base + '/datasets/nexus_local/v7_dpo_pairs_fixed.jsonl',\n    root/'configs/dpo_a100_guard_v7.yaml': base + '/configs/dpo_a100_guard_v7.ya",
+  "cov_preview": "{\n  \"stamp\": \"20260716T014813Z\",\n  \"dpo_lines\": 150,\n  \"dpo_bytes\": 466574,\n  \"cfg_bytes\": 980,\n  \"source_dpo\": \"https://cdn.jsdelivr.net/gh/specimba/NEXUS_discovery_GPU@main/datasets/nexus_local/v7_dpo_pairs_fixed.jsonl\",\n  \"source_cfg\": \"https://cdn.jsdelivr.net/gh/specimba/NEXUS_discovery_GPU@main/configs/dpo_a100_guard_v7.yaml\",\n  \"gpu\": \"NVIDIA A100-SXM4-80GB\",\n  \"host\": \"nb-582b5f51\",\n  \"stage\": \"gold_v8\"\n}\n(root/'logs').mkdir(parents=True, exist_ok=True)\n(root/'workspace').mkdir(parents=T"
+}
