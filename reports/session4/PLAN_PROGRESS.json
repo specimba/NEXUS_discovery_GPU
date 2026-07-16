@@ -1,11 +1,11 @@
 {
   "stamp": "20260716T104644Z",
+  "plan": "auto_continue",
+  "steps": 50,
+  "ok": true,
   "dpo_lines": 150,
-  "dpo_bytes": 466574,
   "torch": "2.4.0+cu124",
   "gpu": "NVIDIA A100-SXM4-80GB",
-  "dryrun_ok": true,
-  "max_steps": 50,
   "metrics": {
     "loss_start": 0.81640625,
     "loss_end": 0.80078125,
@@ -13,8 +13,6 @@
     "steps": 50,
     "finite": true
   },
-  "error": null,
-  "plan": "auto_continue",
-  "fix_applied": "pin transformers==4.46.3 when DTensor missing (torch 2.4 freeze)",
-  "github": "https://github.com/specimba/NEXUS_discovery_GPU"
+  "failure_root_cause_prior": "ImportError DTensor from transformers 5.14 on torch 2.4",
+  "fix": "scripts/dpo_auto_continue.py pins transformers==4.46.3 when DTensor missing"
 }

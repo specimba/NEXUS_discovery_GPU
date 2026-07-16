@@ -1,14 +1,14 @@
 # MISSION_STATUS
 
-- **Status:** GREEN durable / YELLOW last 50-step attempt
-- **Stamp:** 20260716T095742Z (session refresh verify)
-- **Session:** refreshed; user ~9h remaining; **nothing lost on JuiceFS**
-- **DPO gold:** 150 lines / 466574 bytes (STAGE_GOLD_OK)
-- **Torch:** 2.4.0+cu124 · GPU A100 80GB
-- **dryrun_ok marker:** true (prior 20-step)
-- **Packages:** torch / transformers 5.14 / datasets / hub present
-- **Last train attempt:** max_steps=50 → train_rc=1 (metrics None) — fix next, data intact
-- **Skip:** Cline / Vincent (helpers only if needed)
+- **Status:** GREEN
+- **Stamp:** 20260716T104644Z
+- **Plan:** auto_continue max_steps=**50** — **OK**
+- **dpo_lines:** 150
+- **metrics:** loss 0.816→0.801 mean 0.826 steps=50 finite=True
+- **torch:** 2.4.0+cu124 · GPU NVIDIA A100-SXM4-80GB
+- **error:** None
+- **Fix:** transformers pin 4.46.3 (5.14 DTensor needs torch≥2.5)
+- **Next:** optional longer run / scale model if cache+points allow; keep freeze
 
 ## Code
 
