@@ -30,13 +30,27 @@ def main() -> int:
         (ROOT / d).mkdir(parents=True, exist_ok=True)
 
     out: dict = {"stamp": STAMP, "plan": "auto_continue", "steps": STEPS, "model": MODEL}
-    dpo = ROOT / "datasets/nexus_local/v7_dpo_pairs_fixed.jsonl"
-    if not dpo.exists() or sum(1 for _ in dpo.open()) < 100:
+    # Prefer explicit path (v8 pipeline stages train jsonl); else gold v7.
+    env_pairs = os.environ.get("NEXUS_DPO_PAIRS", "").strip()
+    candidates = []
+    if env_pairs:
+        candidates.append(Path(env_pairs))
+    candidates.extend(
+        [
+            ROOT / "datasets/nexus_local/v8_dpo_pairs_train.jsonl",
+            ROOT / "datasets/nexus_local/v8/v8_dpo_train.jsonl",
+            ROOT / "datasets/nexus_local/v7_dpo_pairs_fixed.jsonl",
+        ]
+    )
+    dpo = next((p for p in candidates if p.exists() and p.stat().st_size > 1000), candidates[-1])
+    if not dpo.exists() or sum(1 for _ in dpo.open()) < 20:
         import urllib.request
 
         url = "https://cdn.jsdelivr.net/gh/specimba/NEXUS_discovery_GPU@main/datasets/nexus_local/v7_dpo_pairs_fixed.jsonl"
+        dpo = ROOT / "datasets/nexus_local/v7_dpo_pairs_fixed.jsonl"
         urllib.request.urlretrieve(url, dpo)
         out["restaged"] = True
+    out["dpo_path"] = str(dpo)
     out["dpo_lines"] = sum(1 for _ in dpo.open())
     out["dpo_bytes"] = dpo.stat().st_size
 
