@@ -1,32 +1,23 @@
 {
-  "stamp": "20260716T023534Z",
+  "stamp": "20260716T083005Z",
   "host": "nb-582b5f51",
-  "gpu": "NVIDIA A100-SXM4-80GB",
-  "torch": "2.4.0+cu124",
+  "mode": "existing_tab_state",
   "dpo_lines": 150,
   "dpo_bytes": 466574,
-  "dryrun_ok": true,
-  "phase": "done",
-  "hf_whoami": {
-    "name": "specimba",
-    "type": "user"
-  },
-  "versions": {
-    "transformers": "5.13.1",
-    "datasets": "5.0.0"
-  },
-  "model": "Qwen/Qwen2.5-0.5B-Instruct",
-  "max_steps": 20,
-  "trainer_api": "manual_dpo_torch24",
-  "metrics": {
-    "loss_start": 0.81640625,
-    "loss_end": 0.78125,
-    "loss_mean": 0.8330078125,
-    "steps": 20,
-    "finite": true
-  },
-  "train_sec": 3.42,
-  "notes": "trl 1.8 blocked by FSDPModule on torch 2.4 — used TRL-free manual DPO loss; stack freeze held",
-  "github": "https://github.com/specimba/NEXUS_discovery_GPU",
-  "log": "/data/NEXUS/logs/DPO_DRYRUN_20260716T023534Z.json"
+  "torch": "2.4.0+cu124",
+  "cuda": true,
+  "gpu": "NVIDIA A100-SXM4-80GB",
+  "dryrun_marker": true,
+  "extensions_n": 15,
+  "extensions_seen": [
+    "kilocode.kilo-code",
+    "ms-python.python",
+    "ms-python.debugpy",
+    "ms-toolsai / jupyter family",
+    "cloudstudio.jupyter-server-provider"
+  ],
+  "policy": "no_reload_no_new_tab; low_bw; no heavy pip/cuda reinstall; jsDelivr mirrors",
+  "compute_note": "user reported 4996/5000 points used; more applied",
+  "code_url": "https://discovery-notebook-p.intern-ai.org.cn/notebook/60400422/nb-582b5f51afb6b085773ce464c2654850/code/?folder=/data/NEXUS/workspace",
+  "github": "https://github.com/specimba/NEXUS_discovery_GPU"
 }

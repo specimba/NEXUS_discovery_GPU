@@ -1,18 +1,17 @@
 # MISSION_STATUS
 
-- **Status:** GREEN
-- **Stamp:** 20260716T023534Z
-- **Machine:** nb-582b5f51 /data/NEXUS
+- **Status:** GREEN (resume low-bw, existing tab)
+- **Stamp:** 20260716T083005Z
+- **Machine:** nb-582b5f51 /data/NEXUS/workspace
 - **GPU:** NVIDIA A100-SXM4-80GB
-- **Torch:** 2.4.0+cu124 (stack freeze held)
-- **HF whoami:** **specimba**
-- **DPO gold staged:** 150 lines / 466574 bytes (jsDelivr multi-mirror)
-- **DPO dry-run:** **OK** — 20 steps, manual_dpo_torch24, loss 0.816→0.781, 3.42s
-- **Note:** trl 1.8.0 incompatible with torch 2.4 (`FSDPModule`); TRL-free path used
-- **OCR:** parked
+- **Torch:** 2.4.0+cu124 cuda=True (stack freeze held)
+- **DPO gold:** **150 lines / 466574 bytes**
+- **Dryrun marker:** true (`checkpoints/dpo_guard_v7_canary/dryrun_ok.json`)
+- **Extensions:** Kilo Code + Jupyter family + ms-python present (~15 interesting)
+- **Compute:** ~4996/5000 used; more applied — stay light until points land
+- **Policy:** no tab thrash / no reload loops; no heavy pip or CUDA reinstall; prefer JuiceFS + jsDelivr
+- **SCP API key:** stored local-only (not git)
 
-## Ops
+## Code URL (use this tab only)
 
-- GitHub: https://github.com/specimba/NEXUS_discovery_GPU
-- Stage: `scripts/pull_and_stage.sh` / CDP `intern_stage_gold_v8.mjs`
-- Dry-run: `scripts/dpo_dryrun_v7.py` (manual preference loss, no trl)
+https://discovery-notebook-p.intern-ai.org.cn/notebook/60400422/nb-582b5f51afb6b085773ce464c2654850/code/?folder=/data/NEXUS/workspace
