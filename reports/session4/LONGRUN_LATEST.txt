@@ -1,0 +1,36 @@
+LONGRUN_V7_START 20260716T012822Z
+nb-582b5f51afb6b085773ce464c2654850-0
+/data/NEXUS/workspace
+root
+NVIDIA A100-SXM4-80GB, 81920 MiB, 565 MiB, 0 %
+total 84
+drwxr-xr-x 21 root root 4096 Jul 16 00:58 .
+drwxr-xr-x  4 root root 4096 Jul 10 05:53 ..
+drwxr-xr-x  2 root root 4096 Jul 15 19:50 .secrets
+drwxr-xr-x  2 root root 4096 Jul 10 05:53 benches
+drwxr-xr-x  2 root root 4096 Jul 15 00:50 benchmarks
+drwxr-xr-x  4 root root 4096 Jul 11 07:56 checkpoints
+drwxr-xr-x  4 root root 4096 Jul 15 13:34 code-server
+drwxr-xr-x  2 root root 4096 Jul 16 01:21 configs
+drwxr-xr-x  7 root root 4096 Jul 16 00:58 datasets
+drwxr-xr-x  2 root root 4096 Jul 15 00:50 experiments
+drwxr-xr-x  4 root root 4096 Jul 10 09:41 git_backups
+drwxr-xr-x  2 root root 4096 Jul 15 20:15 hf_cache
+drwxr-xr-x  2 root root 4096 Jul 10 05:53 kv_cache_studies
+drwxr-xr-x  3 root root 4096 Jul 16 01:28 logs
+drwxr-xr-x  2 root root 4096 Jul 15 11:30 m0_prep
+drwxr-xr-x  2 root root 4096 Jul 10 05:53 repo_sync
+drwxr-xr-x  4 root root 4096 Jul 11 04:52 reports
+drwxr-xr-x  2 root root 4096 Jul 15 00:50 session4
+drwxr-xr-x  6 root root 4096 Jul 15 12:10 venv_m0
+drwxr-xr-x  3 root root 4096 Jul 15 19:50 venvs
+drwxr-xr-x 11 root root 4096 Jul 15 19:44 workspace
+HF_TOKEN_FILE=yes
+torch 2.4.0+cu124 cuda=True
+# NEXUS GPU smoke (JuiceFS durable)
+import torch, pathlib, json, time
+print('torch', torch.__version__, 'cuda', torch.cuda.is_available())
+print('device', torch.cuda.get_device_name(0) if torch.cuda.is_available() else None)
+if torch.cuda.is_available():
+    x = torch.randn(512, 512, device='cuda'); y = (x@x).mean().item(); print('matmul_mean', y)
+print('NEXUS_GPU_SMOKE_OK', time.strftime('%Y%m%dT%H%M%SZ', time.gmtime()))

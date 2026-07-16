@@ -36,3 +36,11 @@ This repo is the durable backup target. Do **not** commit PATs or secrets.
 ## Session notes
 
 See `docs/` for automation policy (calm single-burst CDP, no thrash).
+
+### Session 4 (2026-07-16)
+
+- Longrun inventory + continuity on JuiceFS
+- DPO gold + canary config in-repo: `datasets/nexus_local/`, `configs/`
+- After push, on A100: `bash scripts/pull_and_stage.sh`
+- Laptop OCR helpers under `local_ocr/` (optional; not for A100 GPU hours)
+- Latest narrative: `reports/session4/SESSION_LATEST.md`

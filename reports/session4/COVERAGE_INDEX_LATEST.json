@@ -1,0 +1,16 @@
+{
+  "stamp": "20260716T012822Z",
+  "host": "nb-582b5f51afb6b085773ce464c2654850-0",
+  "gpu": "NVIDIA A100-SXM4-80GB",
+  "vram_mib": 81920,
+  "torch": "2.4.0+cu124",
+  "cuda": true,
+  "hf_token": true,
+  "dpo_path": "/data/NEXUS/datasets/nexus_local/v7_dpo_pairs_fixed.jsonl",
+  "dpo_lines_observed": 21,
+  "dpo_lines_repo_gold": 150,
+  "config": "/data/NEXUS/configs/dpo_a100_guard_v7.yaml",
+  "log": "/data/NEXUS/logs/LONGRUN_V7_20260716T012822Z.log",
+  "github": "https://github.com/specimba/NEXUS_discovery_GPU",
+  "notes": "Repo gold DPO staged for pull_and_stage; remote may still hold canary until pull"
+}

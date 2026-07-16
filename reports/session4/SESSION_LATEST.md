@@ -1,50 +1,46 @@
-# session4 tick 33 @ 20260711T080334Z
-- host: nb-582b5f51afb6b085773ce464c2654850-0
-- gpu: GPU 0: NVIDIA A100-SXM4-80GB (UUID: GPU-fd19a280-2436-eec0-07e0-532be7533df7)
-- df: JuiceFS:discovery-prod   30G  595M   30G   2% /data
+# SESSION 4 LATEST — 2026-07-16
 
-## train
-```
-{
-  "stamp": "20260711T080334Z",
-  "device": "cuda",
-  "name": "NVIDIA A100-SXM4-80GB",
-  "steps": 120,
-  "size": 2048,
-  "seed": 73,
-  "sec": 0.4081845283508301,
-  "sec_per_step": 0.0034015377362569175,
-  "loss_start": 0.9998058676719666,
-  "loss_end": 0.09140293300151825,
-  "torch": "2.4.0+cu124",
-  "gpu_line": "GPU 0: NVIDIA A100-SXM4-80GB (UUID: GPU-fd19a280-2436-eec0-07e0-532be7533df7)",
-  "tick": 33,
-  "session": "session4"
-}
+## Save point
+
+- **Repo:** https://github.com/specimba/NEXUS_discovery_GPU
+- **Intern:** nb-582b5f51 · `/data/NEXUS/workspace`
+- **GPU:** NVIDIA A100-SXM4-80GB (80Gi)
+- **Torch (observed):** 2.4.0+cu124 · cuda=True
+- **HF token file:** present on JuiceFS
+
+## Done this stretch
+
+1. Parked local GPU OCR pipeline (workspace facts + continuity) — not on A100 budget
+2. Reopened Intern session; workspace one-click restore works
+3. CDP longrun wrote durable files under `/data/NEXUS/workspace/` and `/data/NEXUS/logs/`
+4. Staged into this GitHub package:
+   - `datasets/nexus_local/v7_dpo_pairs_fixed.jsonl` (full gold, 150 lines)
+   - `configs/dpo_a100_guard_v7.yaml`
+   - `scripts/pull_and_stage.sh` (run on A100 after git pull)
+   - `scripts/cdp/*` longrun harnesses
+   - `local_ocr/*` laptop OCR continuity helpers
+   - `reports/session4/*` harvest + mission status
+
+## On A100 after this push
+
+```bash
+bash /data/NEXUS/git_backups/work/scripts/pull_and_stage.sh
+# or:
+cd /data/NEXUS/git_backups/work && git pull --ff-only
+cp -f datasets/nexus_local/v7_dpo_pairs_fixed.jsonl /data/NEXUS/datasets/nexus_local/
+cp -f configs/dpo_a100_guard_v7.yaml /data/NEXUS/configs/
+wc -l /data/NEXUS/datasets/nexus_local/v7_dpo_pairs_fixed.jsonl
 ```
 
-## bench
-```
-{
-  "device": "NVIDIA A100-SXM4-80GB",
-  "torch": "2.4.0+cu124",
-  "tests": [
-    {
-      "op": "matmul",
-      "n": 2048,
-      "reps": 8,
-      "dt_s": 0.007903575897216797,
-      "gflops": 17389.46462453766
-    },
-    {
-      "op": "matmul",
-      "n": 4096,
-      "reps": 4,
-      "dt_s": 0.02917790412902832,
-      "gflops": 18841.511421002393
-    }
-  ],
-  "stamp": "20260711T080334Z",
-  "tick": 33
-}
-```
+## Next (train track)
+
+1. `huggingface-cli whoami` / `hf auth whoami` with secret file
+2. Ensure `trl peft transformers datasets accelerate` in `venvs/nexus_hf`
+3. Dry-run DPO 20 steps (canary model Qwen2.5-0.5B-Instruct)
+4. Keep Cline collapsed during CDP; prefer Kilo for agent continuity
+
+## Policy
+
+- Calm single-burst CDP (see `docs/SESSION_POLICY.md`)
+- No secrets in git
+- Prefer JuiceFS `/data/NEXUS` + this GitHub mirror for backup
