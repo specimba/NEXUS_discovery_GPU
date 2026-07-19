@@ -1,0 +1,15 @@
+ACT. NO ESSAYS. Tools only. One marker. STOP.
+requires_approval=false. BEST frozen. No train.
+
+ENV:
+- PRODUCT_SCORE.md, PRODUCT_SPINE_INVENTORY.md, CASCADE_DRY_RUN.md, bench/
+
+MISSION E17 honest scoreboard: merge evidence into HONEST_SCOREBOARD.md (what works / gaps / no fake scores); marker.
+
+DO:
+1) Read short evidence files if present
+2) Write /data/NEXUS/workspace/HONEST_SCOREBOARD.md: GREEN bullets, RED gaps, GO-gates (train OFF)
+3) echo E17_HONEST_SCORE_OK
+
+DONE when: scoreboard md exists + marker.
+DO NOT: invent metrics, train, mutate BEST.

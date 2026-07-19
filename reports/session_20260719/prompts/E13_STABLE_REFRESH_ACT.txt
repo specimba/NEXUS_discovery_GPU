@@ -1,0 +1,15 @@
+ACT. NO ESSAYS. Tools only. One marker. STOP.
+requires_approval=false. BEST frozen. No train.
+
+ENV:
+- /data/NEXUS/workspace/STABLE_CHECKPOINT.md
+- Decoy pgrep
+
+MISSION E13 stable refresh: rewrite STABLE_CHECKPOINT.md with post-reboot truth (files+decoy+no train); marker.
+
+DO:
+1) Overwrite/update STABLE_CHECKPOINT.md ≤20 lines: date, markers green, decoy pid, cascade files, product inventory path, next=E14/GO only for train
+2) echo E13_STABLE_REFRESH_OK
+
+DONE when: STABLE_CHECKPOINT.md updated + marker.
+DO NOT: train or claim scores without evidence.

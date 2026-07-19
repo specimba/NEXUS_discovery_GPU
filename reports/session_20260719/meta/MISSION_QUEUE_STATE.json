@@ -1,0 +1,60 @@
+{
+  "current": "E19_PORTABLE_BACKUP_ACT",
+  "completed": [
+    "PHASE_B_OK",
+    "STEP_2_OK",
+    "GGUF_SMOKE_OK",
+    "L0_BOUNCER_PLAN_OK",
+    "STEP_5_OK",
+    "POST_OOM_OK",
+    "STABLE_OK",
+    "E8_DISK_TRUTH_OK",
+    "POST_REBOOT",
+    "E9_CASCADE_DRY_OK",
+    "E10_PRODUCT_SPINE_OK",
+    "E11_BENCH_SMOKE_OK",
+    "E12_GUARD_STUB_OK",
+    "E13_STABLE_REFRESH_OK",
+    "E14_NEXT_PLAN_OK",
+    "E15_DECOY_VRAM_OK",
+    "E16_CASCADE_WIRE_OK",
+    "E17_HONEST_SCORE_OK",
+    "E18_SESSION_PACK_OK"
+  ],
+  "lane": "LAST_SESSION_PORTABLE",
+  "law": "auto_proceed_no_user_wait_0_theatre",
+  "agents": [
+    "cline-kimi-k3",
+    "kilo-hy3",
+    "grok-orch"
+  ],
+  "lastDispatchTs": 1784450064122,
+  "dispatched": {
+    "E8_DISK_TRUTH_ACT": 1784438105492,
+    "E10_PRODUCT_SPINE_ACT": 1784446591343,
+    "E9_CASCADE_DRY_ACT": 1784446563380,
+    "E11_BENCH_SMOKE_ACT": 1784443822849,
+    "E12_GUARD_STUB_ACT": 1784443846564,
+    "E13_STABLE_REFRESH_ACT": 1784443874787,
+    "E14_KIMI_NEXT_PLAN_ACT": 1784443904883,
+    "E15_DECOY_VRAM_ACT": 1784446213951,
+    "E19_PORTABLE_BACKUP_ACT": 1784450064122
+  },
+  "kiloLastTs": 0,
+  "decoyLastTs": 1784450124887,
+  "diskMarkers": [
+    "E8_DISK_TRUTH_OK",
+    "E15_DECOY_VRAM_OK",
+    "E16_CASCADE_WIRE_OK",
+    "E17_HONEST_SCORE_OK",
+    "E18_SESSION_PACK_OK",
+    "E9_CASCADE_DRY_OK",
+    "E10_PRODUCT_SPINE_OK",
+    "E11_BENCH_SMOKE_OK",
+    "E12_GUARD_STUB_OK",
+    "E13_STABLE_REFRESH_OK",
+    "E14_NEXT_PLAN_OK"
+  ],
+  "ts": "2026-07-19T07:37:04.062Z",
+  "note": "last drive/account session: portable backup + clean sheet + github sync"
+}

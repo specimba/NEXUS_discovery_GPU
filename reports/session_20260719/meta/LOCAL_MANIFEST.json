@@ -1,0 +1,1003 @@
+{
+  "ts": "2026-07-19T08:39:15.369Z",
+  "host": "local-windows-wsl",
+  "purpose": "last-session portable for new Discovery VM / account",
+  "files": [
+    {
+      "path": "CLEAN_SHEET_BOOT.md",
+      "bytes": 2698
+    },
+    {
+      "path": "logs_snapshot/act_verified.json",
+      "bytes": 712
+    },
+    {
+      "path": "logs_snapshot/auto_proceed_go.json",
+      "bytes": 1595
+    },
+    {
+      "path": "logs_snapshot/boot_fresh_list.json",
+      "bytes": 1192
+    },
+    {
+      "path": "logs_snapshot/boot_resume.json",
+      "bytes": 523
+    },
+    {
+      "path": "logs_snapshot/boot_start3.json",
+      "bytes": 114
+    },
+    {
+      "path": "logs_snapshot/boot_start_enter.json",
+      "bytes": 451
+    },
+    {
+      "path": "logs_snapshot/ck0.ocr.json",
+      "bytes": 6711
+    },
+    {
+      "path": "logs_snapshot/ck1_cline.ocr.json",
+      "bytes": 6787
+    },
+    {
+      "path": "logs_snapshot/ck2_f1.ocr.json",
+      "bytes": 6509
+    },
+    {
+      "path": "logs_snapshot/ck3.ocr.json",
+      "bytes": 6741
+    },
+    {
+      "path": "logs_snapshot/ck4_kilo.ocr.json",
+      "bytes": 6741
+    },
+    {
+      "path": "logs_snapshot/ck5_final.ocr.json",
+      "bytes": 6741
+    },
+    {
+      "path": "logs_snapshot/ck6_dual.ocr.json",
+      "bytes": 6741
+    },
+    {
+      "path": "logs_snapshot/cline_aa_close_send.json",
+      "bytes": 1765
+    },
+    {
+      "path": "logs_snapshot/cline_aa_settings_kimi.log",
+      "bytes": 22773
+    },
+    {
+      "path": "logs_snapshot/cline_e5_kick.json",
+      "bytes": 545
+    },
+    {
+      "path": "logs_snapshot/cline_kick_now.json",
+      "bytes": 1909
+    },
+    {
+      "path": "logs_snapshot/cline_phase_b_live.json",
+      "bytes": 700
+    },
+    {
+      "path": "logs_snapshot/cline_phase_b_send2.json",
+      "bytes": 3143
+    },
+    {
+      "path": "logs_snapshot/collab_5h.out",
+      "bytes": 16034
+    },
+    {
+      "path": "logs_snapshot/collab_after_reconnect.json",
+      "bytes": 183
+    },
+    {
+      "path": "logs_snapshot/collab_e15_cline.json",
+      "bytes": 815
+    },
+    {
+      "path": "logs_snapshot/collab_e15_kick.json",
+      "bytes": 684
+    },
+    {
+      "path": "logs_snapshot/collab_e8_kick.json",
+      "bytes": 395
+    },
+    {
+      "path": "logs_snapshot/collab_e9_kick.json",
+      "bytes": 1625
+    },
+    {
+      "path": "logs_snapshot/collab_grok_e15_e18.json",
+      "bytes": 592
+    },
+    {
+      "path": "logs_snapshot/decoy_check.json",
+      "bytes": 57
+    },
+    {
+      "path": "logs_snapshot/e19_cline_code.json",
+      "bytes": 429
+    },
+    {
+      "path": "logs_snapshot/e19_portable_kick.json",
+      "bytes": 1258
+    },
+    {
+      "path": "logs_snapshot/e1_efficient_dispatch.json",
+      "bytes": 970
+    },
+    {
+      "path": "logs_snapshot/e1_efficient_dispatch2.json",
+      "bytes": 631
+    },
+    {
+      "path": "logs_snapshot/e7_dispatch.json",
+      "bytes": 582
+    },
+    {
+      "path": "logs_snapshot/eyes_cline_e20.json",
+      "bytes": 637
+    },
+    {
+      "path": "logs_snapshot/eyes_cline_retry.json",
+      "bytes": 311
+    },
+    {
+      "path": "logs_snapshot/eyes_cline_sent.json",
+      "bytes": 329
+    },
+    {
+      "path": "logs_snapshot/eyes_fixed_cline.json",
+      "bytes": 871
+    },
+    {
+      "path": "logs_snapshot/fix_plan_to_act.json",
+      "bytes": 515
+    },
+    {
+      "path": "logs_snapshot/fix_plan_to_act.log",
+      "bytes": 2739
+    },
+    {
+      "path": "logs_snapshot/fix_proceed_e1.json",
+      "bytes": 3114
+    },
+    {
+      "path": "logs_snapshot/force_act_e1.json",
+      "bytes": 2756
+    },
+    {
+      "path": "logs_snapshot/force_past_complete.json",
+      "bytes": 4218
+    },
+    {
+      "path": "logs_snapshot/frames_dump.json",
+      "bytes": 5385
+    },
+    {
+      "path": "logs_snapshot/go_act_ready.json",
+      "bytes": 895
+    },
+    {
+      "path": "logs_snapshot/inst_wait_0.ocr.json",
+      "bytes": 8001
+    },
+    {
+      "path": "logs_snapshot/k0_baseline.ocr.json",
+      "bytes": 9055
+    },
+    {
+      "path": "logs_snapshot/k10_model_set.ocr.json",
+      "bytes": 10689
+    },
+    {
+      "path": "logs_snapshot/k11_features.ocr.json",
+      "bytes": 10689
+    },
+    {
+      "path": "logs_snapshot/k12_subagents.ocr.json",
+      "bytes": 10699
+    },
+    {
+      "path": "logs_snapshot/k13_after_done.ocr.json",
+      "bytes": 10699
+    },
+    {
+      "path": "logs_snapshot/k14_smoke.ocr.json",
+      "bytes": 12511
+    },
+    {
+      "path": "logs_snapshot/k1_cline.ocr.json",
+      "bytes": 9055
+    },
+    {
+      "path": "logs_snapshot/k2_aa_dump.json",
+      "bytes": 497
+    },
+    {
+      "path": "logs_snapshot/k2_aa_menu.ocr.json",
+      "bytes": 9162
+    },
+    {
+      "path": "logs_snapshot/k3_aa_all.ocr.json",
+      "bytes": 9171
+    },
+    {
+      "path": "logs_snapshot/k4_gear_hunt.ocr.json",
+      "bytes": 9176
+    },
+    {
+      "path": "logs_snapshot/k5_settings.ocr.json",
+      "bytes": 9171
+    },
+    {
+      "path": "logs_snapshot/k6_model_menu.ocr.json",
+      "bytes": 9170
+    },
+    {
+      "path": "logs_snapshot/k7_kimi_search.ocr.json",
+      "bytes": 8860
+    },
+    {
+      "path": "logs_snapshot/k8_after_kimi.ocr.json",
+      "bytes": 10689
+    },
+    {
+      "path": "logs_snapshot/k9_effort.ocr.json",
+      "bytes": 10689
+    },
+    {
+      "path": "logs_snapshot/keepalive.out",
+      "bytes": 5362
+    },
+    {
+      "path": "logs_snapshot/kh0.ocr.json",
+      "bytes": 8949
+    },
+    {
+      "path": "logs_snapshot/kh1.ocr.json",
+      "bytes": 9052
+    },
+    {
+      "path": "logs_snapshot/kh2.ocr.json",
+      "bytes": 8910
+    },
+    {
+      "path": "logs_snapshot/kh_final.ocr.json",
+      "bytes": 8802
+    },
+    {
+      "path": "logs_snapshot/ki0.ocr.json",
+      "bytes": 10166
+    },
+    {
+      "path": "logs_snapshot/ki3_ocr_pick.ocr.json",
+      "bytes": 10167
+    },
+    {
+      "path": "logs_snapshot/ki4_detail.ocr.json",
+      "bytes": 10175
+    },
+    {
+      "path": "logs_snapshot/ki5_wait_0.ocr.json",
+      "bytes": 10423
+    },
+    {
+      "path": "logs_snapshot/ki5_wait_1.ocr.json",
+      "bytes": 10423
+    },
+    {
+      "path": "logs_snapshot/ki5_wait_10.ocr.json",
+      "bytes": 10429
+    },
+    {
+      "path": "logs_snapshot/ki5_wait_11.ocr.json",
+      "bytes": 10425
+    },
+    {
+      "path": "logs_snapshot/ki5_wait_12.ocr.json",
+      "bytes": 10425
+    },
+    {
+      "path": "logs_snapshot/ki5_wait_13.ocr.json",
+      "bytes": 10425
+    },
+    {
+      "path": "logs_snapshot/ki5_wait_14.ocr.json",
+      "bytes": 10429
+    },
+    {
+      "path": "logs_snapshot/ki5_wait_15.ocr.json",
+      "bytes": 10429
+    },
+    {
+      "path": "logs_snapshot/ki5_wait_16.ocr.json",
+      "bytes": 10425
+    },
+    {
+      "path": "logs_snapshot/ki5_wait_17.ocr.json",
+      "bytes": 10425
+    },
+    {
+      "path": "logs_snapshot/ki5_wait_2.ocr.json",
+      "bytes": 10423
+    },
+    {
+      "path": "logs_snapshot/ki5_wait_3.ocr.json",
+      "bytes": 10423
+    },
+    {
+      "path": "logs_snapshot/ki5_wait_4.ocr.json",
+      "bytes": 10423
+    },
+    {
+      "path": "logs_snapshot/ki5_wait_5.ocr.json",
+      "bytes": 10426
+    },
+    {
+      "path": "logs_snapshot/ki5_wait_6.ocr.json",
+      "bytes": 10429
+    },
+    {
+      "path": "logs_snapshot/ki5_wait_7.ocr.json",
+      "bytes": 10429
+    },
+    {
+      "path": "logs_snapshot/ki5_wait_8.ocr.json",
+      "bytes": 10429
+    },
+    {
+      "path": "logs_snapshot/ki5_wait_9.ocr.json",
+      "bytes": 10429
+    },
+    {
+      "path": "logs_snapshot/kilo_aa_enable.log",
+      "bytes": 3092
+    },
+    {
+      "path": "logs_snapshot/kilo_aa_enable_summary.json",
+      "bytes": 490
+    },
+    {
+      "path": "logs_snapshot/kilo_install_setup.log",
+      "bytes": 10534
+    },
+    {
+      "path": "logs_snapshot/kilo_official_install.log",
+      "bytes": 12502
+    },
+    {
+      "path": "logs_snapshot/kilo_official_summary.json",
+      "bytes": 505
+    },
+    {
+      "path": "logs_snapshot/kilo_open_in_tab_summary.json",
+      "bytes": 565
+    },
+    {
+      "path": "logs_snapshot/kilo_open_tab_ha.json",
+      "bytes": 558
+    },
+    {
+      "path": "logs_snapshot/kilo_trust_install.json",
+      "bytes": 592
+    },
+    {
+      "path": "logs_snapshot/kilo_verify_e6.json",
+      "bytes": 858
+    },
+    {
+      "path": "logs_snapshot/kimi_efficiency_audit.json",
+      "bytes": 3059
+    },
+    {
+      "path": "logs_snapshot/k_aa_kimi_summary.json",
+      "bytes": 1466
+    },
+    {
+      "path": "logs_snapshot/last_dispatch.json",
+      "bytes": 168
+    },
+    {
+      "path": "logs_snapshot/last_kilo_dispatch.json",
+      "bytes": 590
+    },
+    {
+      "path": "logs_snapshot/list_boot_status.json",
+      "bytes": 1157
+    },
+    {
+      "path": "logs_snapshot/list_status.ocr.json",
+      "bytes": 861
+    },
+    {
+      "path": "logs_snapshot/login0.ocr.json",
+      "bytes": 6621
+    },
+    {
+      "path": "logs_snapshot/login1.ocr.json",
+      "bytes": 6621
+    },
+    {
+      "path": "logs_snapshot/login2_dialog.ocr.json",
+      "bytes": 6621
+    },
+    {
+      "path": "logs_snapshot/login_final.ocr.json",
+      "bytes": 5180
+    },
+    {
+      "path": "logs_snapshot/login_focus.ocr.json",
+      "bytes": 5137
+    },
+    {
+      "path": "logs_snapshot/login_protocol_final.ocr.json",
+      "bytes": 6621
+    },
+    {
+      "path": "logs_snapshot/manual_open_url.log",
+      "bytes": 3600
+    },
+    {
+      "path": "logs_snapshot/MISSION_QUEUE_STATE.json",
+      "bytes": 1583
+    },
+    {
+      "path": "logs_snapshot/no_infinity_action.json",
+      "bytes": 1095
+    },
+    {
+      "path": "logs_snapshot/oom_refresh.json",
+      "bytes": 771
+    },
+    {
+      "path": "logs_snapshot/open_cline_kilo.log",
+      "bytes": 3444
+    },
+    {
+      "path": "logs_snapshot/open_cline_kilo_summary.json",
+      "bytes": 519
+    },
+    {
+      "path": "logs_snapshot/open_kilo_half.log",
+      "bytes": 3362
+    },
+    {
+      "path": "logs_snapshot/open_kilo_half_summary.json",
+      "bytes": 598
+    },
+    {
+      "path": "logs_snapshot/p2_0.ocr.json",
+      "bytes": 12917
+    },
+    {
+      "path": "logs_snapshot/p2_aa_done.ocr.json",
+      "bytes": 12836
+    },
+    {
+      "path": "logs_snapshot/p2_aa_mid.ocr.json",
+      "bytes": 12711
+    },
+    {
+      "path": "logs_snapshot/p2_aa_open.ocr.json",
+      "bytes": 12596
+    },
+    {
+      "path": "logs_snapshot/p2_after_done.ocr.json",
+      "bytes": 14903
+    },
+    {
+      "path": "logs_snapshot/p2_after_kimi.ocr.json",
+      "bytes": 13164
+    },
+    {
+      "path": "logs_snapshot/p2_effort.ocr.json",
+      "bytes": 13164
+    },
+    {
+      "path": "logs_snapshot/p2_features.ocr.json",
+      "bytes": 11254
+    },
+    {
+      "path": "logs_snapshot/p2_features_done.ocr.json",
+      "bytes": 11468
+    },
+    {
+      "path": "logs_snapshot/p2_kimi_list.ocr.json",
+      "bytes": 13342
+    },
+    {
+      "path": "logs_snapshot/p2_settings.ocr.json",
+      "bytes": 13160
+    },
+    {
+      "path": "logs_snapshot/p3_0.ocr.json",
+      "bytes": 12325
+    },
+    {
+      "path": "logs_snapshot/p3_aa.ocr.json",
+      "bytes": 12510
+    },
+    {
+      "path": "logs_snapshot/p3_aa2.ocr.json",
+      "bytes": 12510
+    },
+    {
+      "path": "logs_snapshot/p3_aa_edit.ocr.json",
+      "bytes": 12510
+    },
+    {
+      "path": "logs_snapshot/p3_aa_final.ocr.json",
+      "bytes": 12510
+    },
+    {
+      "path": "logs_snapshot/p3_after_done.ocr.json",
+      "bytes": 12512
+    },
+    {
+      "path": "logs_snapshot/p3_final.json",
+      "bytes": 941
+    },
+    {
+      "path": "logs_snapshot/p3_settings.ocr.json",
+      "bytes": 12582
+    },
+    {
+      "path": "logs_snapshot/p3_smoke.ocr.json",
+      "bytes": 12512
+    },
+    {
+      "path": "logs_snapshot/p4_aa_act.json",
+      "bytes": 282
+    },
+    {
+      "path": "logs_snapshot/post_crash_kick.json",
+      "bytes": 555
+    },
+    {
+      "path": "logs_snapshot/proactive_bg.out",
+      "bytes": 96716
+    },
+    {
+      "path": "logs_snapshot/progression_bg.out",
+      "bytes": 8327
+    },
+    {
+      "path": "logs_snapshot/PROGRESSION_LOG.md",
+      "bytes": 45812
+    },
+    {
+      "path": "logs_snapshot/PROGRESSION_ORCH.log",
+      "bytes": 427843
+    },
+    {
+      "path": "logs_snapshot/PROGRESSION_STATE.json",
+      "bytes": 461
+    },
+    {
+      "path": "logs_snapshot/prog_t000.ocr.json",
+      "bytes": 62
+    },
+    {
+      "path": "logs_snapshot/prog_t002.ocr.json",
+      "bytes": 62
+    },
+    {
+      "path": "logs_snapshot/prog_t003.ocr.json",
+      "bytes": 62
+    },
+    {
+      "path": "logs_snapshot/prog_t004.ocr.json",
+      "bytes": 62
+    },
+    {
+      "path": "logs_snapshot/prog_t006.ocr.json",
+      "bytes": 62
+    },
+    {
+      "path": "logs_snapshot/prog_t008.ocr.json",
+      "bytes": 62
+    },
+    {
+      "path": "logs_snapshot/prog_t009.ocr.json",
+      "bytes": 62
+    },
+    {
+      "path": "logs_snapshot/prog_t010.ocr.json",
+      "bytes": 62
+    },
+    {
+      "path": "logs_snapshot/prog_t012.ocr.json",
+      "bytes": 62
+    },
+    {
+      "path": "logs_snapshot/prog_t014.ocr.json",
+      "bytes": 62
+    },
+    {
+      "path": "logs_snapshot/prog_t016.ocr.json",
+      "bytes": 62
+    },
+    {
+      "path": "logs_snapshot/prog_t018.ocr.json",
+      "bytes": 62
+    },
+    {
+      "path": "logs_snapshot/prog_t020.ocr.json",
+      "bytes": 62
+    },
+    {
+      "path": "logs_snapshot/prog_t022.ocr.json",
+      "bytes": 62
+    },
+    {
+      "path": "logs_snapshot/prog_t024.ocr.json",
+      "bytes": 62
+    },
+    {
+      "path": "logs_snapshot/prog_t026.ocr.json",
+      "bytes": 62
+    },
+    {
+      "path": "logs_snapshot/prog_t028.ocr.json",
+      "bytes": 62
+    },
+    {
+      "path": "logs_snapshot/prog_t030.ocr.json",
+      "bytes": 62
+    },
+    {
+      "path": "logs_snapshot/prog_t032.ocr.json",
+      "bytes": 62
+    },
+    {
+      "path": "logs_snapshot/reenter_status.json",
+      "bytes": 54
+    },
+    {
+      "path": "logs_snapshot/resume_dispatch.json",
+      "bytes": 2132
+    },
+    {
+      "path": "logs_snapshot/resume_phase.log",
+      "bytes": 3744
+    },
+    {
+      "path": "logs_snapshot/s0_baseline.ocr.json",
+      "bytes": 20894
+    },
+    {
+      "path": "logs_snapshot/s2_after_install.ocr.json",
+      "bytes": 20986
+    },
+    {
+      "path": "logs_snapshot/s2_mkt_cline.ocr.json",
+      "bytes": 20819
+    },
+    {
+      "path": "logs_snapshot/s3_after_f1_open.ocr.json",
+      "bytes": 20913
+    },
+    {
+      "path": "logs_snapshot/s3_before_toolbar.ocr.json",
+      "bytes": 20986
+    },
+    {
+      "path": "logs_snapshot/s4_cline_panel.ocr.json",
+      "bytes": 20765
+    },
+    {
+      "path": "logs_snapshot/s5_after_login_click.ocr.json",
+      "bytes": 20765
+    },
+    {
+      "path": "logs_snapshot/same_window_proceed.json",
+      "bytes": 1578
+    },
+    {
+      "path": "logs_snapshot/setup_ordered.log",
+      "bytes": 3358
+    },
+    {
+      "path": "logs_snapshot/stable_kick.json",
+      "bytes": 383
+    },
+    {
+      "path": "logs_snapshot/stable_send2.json",
+      "bytes": 577
+    },
+    {
+      "path": "logs_snapshot/tab_health.out",
+      "bytes": 175142
+    },
+    {
+      "path": "logs_snapshot/tab_recover.json",
+      "bytes": 557
+    },
+    {
+      "path": "logs_snapshot/tab_recover2.json",
+      "bytes": 610
+    },
+    {
+      "path": "logs_snapshot/trust0.ocr.json",
+      "bytes": 8001
+    },
+    {
+      "path": "logs_snapshot/trust1.ocr.json",
+      "bytes": 8001
+    },
+    {
+      "path": "logs_snapshot/trust2.ocr.json",
+      "bytes": 8001
+    },
+    {
+      "path": "logs_snapshot/u1_auth_before.ocr.json",
+      "bytes": 2144
+    },
+    {
+      "path": "logs_snapshot/u2_auth_after_cancel.ocr.json",
+      "bytes": 2144
+    },
+    {
+      "path": "logs_snapshot/u3_nb_before.ocr.json",
+      "bytes": 12252
+    },
+    {
+      "path": "logs_snapshot/u4_palette_open_url.ocr.json",
+      "bytes": 10876
+    },
+    {
+      "path": "logs_snapshot/u5_url_prompt.ocr.json",
+      "bytes": 10854
+    },
+    {
+      "path": "logs_snapshot/u6_after_open_url.ocr.json",
+      "bytes": 10854
+    },
+    {
+      "path": "logs_snapshot/u7_cline_state.ocr.json",
+      "bytes": 10120
+    },
+    {
+      "path": "logs_snapshot/u_open_url_done.json",
+      "bytes": 618
+    },
+    {
+      "path": "logs_snapshot/vm_workspace_check.json",
+      "bytes": 2026
+    },
+    {
+      "path": "logs_snapshot/w0_baseline.ocr.json",
+      "bytes": 9943
+    },
+    {
+      "path": "logs_snapshot/w10_open_url_palette.ocr.json",
+      "bytes": 10086
+    },
+    {
+      "path": "logs_snapshot/w11_url_input.ocr.json",
+      "bytes": 10503
+    },
+    {
+      "path": "logs_snapshot/w12_after_open_url.ocr.json",
+      "bytes": 11180
+    },
+    {
+      "path": "logs_snapshot/w13_final.ocr.json",
+      "bytes": 11168
+    },
+    {
+      "path": "logs_snapshot/w14_cmd_palette.ocr.json",
+      "bytes": 12137
+    },
+    {
+      "path": "logs_snapshot/w15_url_prompt.ocr.json",
+      "bytes": 12181
+    },
+    {
+      "path": "logs_snapshot/w16_after_url.ocr.json",
+      "bytes": 12226
+    },
+    {
+      "path": "logs_snapshot/w17_signed_check.ocr.json",
+      "bytes": 12156
+    },
+    {
+      "path": "logs_snapshot/w1_after_cline_focus.ocr.json",
+      "bytes": 10034
+    },
+    {
+      "path": "logs_snapshot/w20_gt_cmd.ocr.json",
+      "bytes": 13430
+    },
+    {
+      "path": "logs_snapshot/w21_after_select.ocr.json",
+      "bytes": 13564
+    },
+    {
+      "path": "logs_snapshot/w22_result.ocr.json",
+      "bytes": 13557
+    },
+    {
+      "path": "logs_snapshot/w22_summary.json",
+      "bytes": 801
+    },
+    {
+      "path": "logs_snapshot/w2_after_login_click.ocr.json",
+      "bytes": 9690
+    },
+    {
+      "path": "logs_snapshot/w3_after_open_external.ocr.json",
+      "bytes": 9707
+    },
+    {
+      "path": "logs_snapshot/w4_auth_page.ocr.json",
+      "bytes": 1296
+    },
+    {
+      "path": "logs_snapshot/w5_code_page.ocr.json",
+      "bytes": 2144
+    },
+    {
+      "path": "logs_snapshot/w6_after_paste.ocr.json",
+      "bytes": 9759
+    },
+    {
+      "path": "logs_snapshot/w7_state.ocr.json",
+      "bytes": 17818
+    },
+    {
+      "path": "logs_snapshot/w8_cline_focus.ocr.json",
+      "bytes": 1540
+    },
+    {
+      "path": "logs_snapshot/w9_after_retry.ocr.json",
+      "bytes": 1540
+    },
+    {
+      "path": "logs_snapshot/watch_post_proceed.json",
+      "bytes": 6365
+    },
+    {
+      "path": "logs_snapshot/workos_f1_retry_summary.json",
+      "bytes": 551
+    },
+    {
+      "path": "logs_snapshot/workos_login.log",
+      "bytes": 6848
+    },
+    {
+      "path": "logs_snapshot/workos_login_summary.json",
+      "bytes": 519
+    },
+    {
+      "path": "meta/LOCAL_MANIFEST.json",
+      "bytes": 20479
+    },
+    {
+      "path": "meta/LOCAL_MANIFEST.md",
+      "bytes": 10752
+    },
+    {
+      "path": "orch/cdp_tab_guard.mjs",
+      "bytes": 5554
+    },
+    {
+      "path": "orch/CLINE_EFFICIENT_PROMPT_PROTOCOL.md",
+      "bytes": 6676
+    },
+    {
+      "path": "orch/cline_scroll_bottom.mjs",
+      "bytes": 5329
+    },
+    {
+      "path": "orch/enter_dev_machine.mjs",
+      "bytes": 10913
+    },
+    {
+      "path": "orch/intern_keepalive.mjs",
+      "bytes": 3787
+    },
+    {
+      "path": "orch/NEXUS_EXECUTION_ORDER_20260719.md",
+      "bytes": 7491
+    },
+    {
+      "path": "orch/orch_5h_collab.mjs",
+      "bytes": 15072
+    },
+    {
+      "path": "orch/orch_mission_dispatch.mjs",
+      "bytes": 19237
+    },
+    {
+      "path": "orch/orch_proactive_mission.mjs",
+      "bytes": 9077
+    },
+    {
+      "path": "orch/tab_health_watch.mjs",
+      "bytes": 7164
+    },
+    {
+      "path": "prompts/E10_PRODUCT_SPINE_ACT.txt",
+      "bytes": 684
+    },
+    {
+      "path": "prompts/E11_BENCH_SMOKE_ACT.txt",
+      "bytes": 603
+    },
+    {
+      "path": "prompts/E12_GUARD_STUB_ACT.txt",
+      "bytes": 639
+    },
+    {
+      "path": "prompts/E13_STABLE_REFRESH_ACT.txt",
+      "bytes": 558
+    },
+    {
+      "path": "prompts/E14_KIMI_NEXT_PLAN_ACT.txt",
+      "bytes": 714
+    },
+    {
+      "path": "prompts/E15_DECOY_VRAM_ACT.txt",
+      "bytes": 714
+    },
+    {
+      "path": "prompts/E16_CASCADE_WIRE_ACT.txt",
+      "bytes": 654
+    },
+    {
+      "path": "prompts/E17_HONEST_SCORE_ACT.txt",
+      "bytes": 553
+    },
+    {
+      "path": "prompts/E18_SESSION_PACK_ACT.txt",
+      "bytes": 500
+    },
+    {
+      "path": "prompts/E19_PORTABLE_BACKUP_ACT.txt",
+      "bytes": 1438
+    },
+    {
+      "path": "prompts/E1_CLOSEOUT_ACT.txt",
+      "bytes": 1186
+    },
+    {
+      "path": "prompts/E20_CLEAN_SHEET_NOTE_ACT.txt",
+      "bytes": 997
+    },
+    {
+      "path": "prompts/E2_HARNESS_ACT.txt",
+      "bytes": 1093
+    },
+    {
+      "path": "prompts/E3_GGUF_SMOKE_ACT.txt",
+      "bytes": 764
+    },
+    {
+      "path": "prompts/E4_L0_STUB_ACT.txt",
+      "bytes": 756
+    },
+    {
+      "path": "prompts/E8_DISK_TRUTH_ACT.txt",
+      "bytes": 954
+    },
+    {
+      "path": "prompts/E9_CASCADE_DRY_ACT.txt",
+      "bytes": 858
+    },
+    {
+      "path": "prompts/KILO_VERIFY_ACT.txt",
+      "bytes": 553
+    },
+    {
+      "path": "prompts/MISSION_QUEUE.md",
+      "bytes": 1137
+    },
+    {
+      "path": "SESSION_ACHIEVEMENTS.md",
+      "bytes": 3135
+    }
+  ]
+}

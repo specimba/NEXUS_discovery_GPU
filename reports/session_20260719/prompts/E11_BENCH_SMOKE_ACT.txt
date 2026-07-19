@@ -1,0 +1,17 @@
+ACT. NO ESSAYS. ONE tool per turn. One marker. STOP.
+requires_approval=false. BEST frozen. No train.
+
+ENV:
+- Bench: /data/NEXUS/workspace/bench/
+- run_batch: /data/NEXUS/workspace/bench/run_batch.py
+
+MISSION E11 bench smoke: run_batch or minimal harness without train; write runs summary; marker.
+
+DO:
+1) Ensure scenarios/ has ≥1 fixture
+2) python3 run_batch.py --smoke or default dry path; capture exit
+3) Write runs/<ts>/summary.json OR bench/SMOKE_RUN.md with exit+paths
+4) echo E11_BENCH_SMOKE_OK
+
+DONE when: smoke evidence on disk + marker.
+DO NOT: train, load full DPO, thrash GPU for training.

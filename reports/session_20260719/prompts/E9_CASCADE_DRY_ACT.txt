@@ -1,0 +1,19 @@
+ACT. NO ESSAYS. ONE tool per turn. One marker. STOP.
+requires_approval=false. BEST frozen. No train. No gdrive. No HF bulk download.
+
+ENV:
+- Workspace: /data/NEXUS/workspace
+- l0: /data/NEXUS/workspace/l0_bouncer/l0_score.py
+- router: /data/NEXUS/workspace/router_stub.py
+- Note: /data/NEXUS/workspace/PHASE_C_CASCADE_NOTE.md
+
+MISSION E9 cascade dry-run: run L0 score + router stub on tiny fixture; write CASCADE_DRY_RUN.md; marker.
+
+DO:
+1) If missing, create minimal fixture text under workspace/bench/scenarios/dry_one.jsonl (1-3 lines dummy)
+2) python3 l0_score.py on fixture OR honest stub score → append CASCADE_DRY_RUN.md
+3) python3 router_stub.py once (or import check) → append same md with exit code
+4) echo E9_CASCADE_DRY_OK
+
+DONE when: CASCADE_DRY_RUN.md has both L0 and router evidence + marker.
+DO NOT: train, mutate BEST, multi-model soup.

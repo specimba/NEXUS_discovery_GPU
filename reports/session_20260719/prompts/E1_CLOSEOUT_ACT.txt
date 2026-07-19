@@ -1,0 +1,21 @@
+ACT. NO ESSAYS. Tools only. One marker. STOP.
+Every execute_command: requires_approval=false. BEST step_5000 frozen. No gdrive. No train.
+
+ENV:
+- Workspace: /data/NEXUS/workspace
+- Bench: /data/NEXUS/workspace/bench  (scenarios/, run_batch.py, runs/)
+- Product: /data/NEXUS/workspace/export/product_8gb/  (bnb4 truth; gguf/ portable)
+- Logs: /data/NEXUS/logs/
+- Decoy: pgrep -af nexus_decoy  (do not kill; do not restart if already running)
+- Model: cline-pass:kimi-k3 Act + full AA
+
+MISSION E1 closeout: confirm Phase B files; polish only if thin; decoy check; marker.
+
+DO (exact order):
+1) ls -lah /data/NEXUS/workspace/PHASE_A_INVENTORY.md /data/NEXUS/workspace/CKPT_HYGIENE.md /data/NEXUS/workspace/PRODUCT_SCORE.md /data/NEXUS/workspace/LONG_PLAN_MIRROR.md /data/NEXUS/workspace/bench/scenarios/README.md /data/NEXUS/workspace/bench/run_batch.py
+2) If run_batch.py missing or under 20 lines: write stub reading scenarios/, writing runs/<ts>/ — no train
+3) If PRODUCT_SCORE.md has no score table: add only bnb4 27/40 + GGUF q4/q5 one-line notes
+4) pgrep -af nexus_decoy || true
+5) echo PHASE_B_OK
+
+STOP. Do not redefine OK vs PARTIAL. Do not start E2/E3. Do not discuss strategy.

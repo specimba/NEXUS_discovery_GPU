@@ -1,0 +1,16 @@
+ACT. NO ESSAYS. Tools only. One marker. STOP.
+requires_approval=false. BEST frozen. No train unless plan says dry-run only.
+
+ENV:
+- Workspace: /data/NEXUS/workspace
+- Read only prior: POST_REBOOT_DISK_TRUTH.md CASCADE_DRY_RUN.md PRODUCT_SPINE_INVENTORY.md STABLE_CHECKPOINT.md
+
+MISSION E14 Kimi next-plan: write honest NEXT_6H_PLAN.md from disk evidence (not chat theatre); marker.
+
+DO:
+1) Read the evidence files (short)
+2) Write /data/NEXUS/workspace/NEXT_6H_PLAN.md with: GREEN list, GAPS, next 4 missions (E15+) each with one marker name, GO gates OFF for train
+3) echo E14_NEXT_PLAN_OK
+
+DONE when: NEXT_6H_PLAN.md exists with ≥4 next missions + marker.
+DO NOT: start train, freeform explore, redefine BEST.

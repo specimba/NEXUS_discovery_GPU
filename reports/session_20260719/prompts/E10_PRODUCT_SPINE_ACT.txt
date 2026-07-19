@@ -1,0 +1,17 @@
+ACT. NO ESSAYS. Tools only. One marker. STOP.
+requires_approval=false. BEST frozen. No train. No gdrive.
+
+ENV:
+- Product: /data/NEXUS/workspace/export/product_8gb/
+- GGUF: /data/NEXUS/workspace/export/product_8gb/gguf/
+- Score: PRODUCT_SCORE.md under workspace or root
+
+MISSION E10 product spine inventory: sizes of bnb4/GGUF artifacts; honest PRODUCT_SCORE touch; marker.
+
+DO:
+1) find+du/ls product_8gb tree (depth 3); write /data/NEXUS/workspace/PRODUCT_SPINE_INVENTORY.md
+2) If PRODUCT_SCORE.md thin: append one honest table row note bnb4=truth if GGUF weak; else leave
+3) echo E10_PRODUCT_SPINE_OK
+
+DONE when: inventory md exists + marker.
+DO NOT: re-quant, train, delete models.

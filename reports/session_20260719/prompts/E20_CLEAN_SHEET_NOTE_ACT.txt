@@ -1,0 +1,23 @@
+ACT. NO ESSAYS. Tools only. One marker. STOP.
+requires_approval=false. BEST frozen. No train.
+
+ENV:
+- Workspace: /data/NEXUS/workspace
+- Portable: /data/NEXUS/workspace/portables/
+
+MISSION E20 clean-sheet boot note for NEXT account/VM: write CLEAN_SHEET_BOOT.md from disk evidence; marker.
+
+DO:
+1) Write /data/NEXUS/workspace/CLEAN_SHEET_BOOT.md with sections:
+   - Machine id nb-253ef43e / NEXUS-GPU-test3 / tenant 101
+   - Boot law: gray=启动 not 进入; duration pts must fit remaining (7h not 8h when 439 pts)
+   - Paths: /data/NEXUS, /data/NEXUS/workspace, product_8gb, BEST frozen
+   - Markers achieved E1-E14 (+E15-E19 if present)
+   - Agents: Cline cline-pass:kimi-k3 Act+AA; Kilo Hy3; Grok orch CDP 9224
+   - Portable tarball path; how to restore on clean VM
+   - GO gates OFF for train
+2) Copy CLEAN_SHEET_BOOT.md into portables/session_20260719/meta/ if dir exists
+3) echo E20_CLEAN_SHEET_OK
+
+DONE when: CLEAN_SHEET_BOOT.md exists + marker.
+DO NOT: train, redefine BEST, gdrive bulk.

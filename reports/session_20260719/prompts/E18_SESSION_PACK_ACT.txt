@@ -1,0 +1,15 @@
+ACT. NO ESSAYS. Tools only. One marker. STOP.
+requires_approval=false. BEST frozen. No train.
+
+ENV:
+- /data/NEXUS/workspace
+
+MISSION E18 session pack: write SESSION_PACK.md listing all markers E8-E17 files+sizes+next GO items; refresh STABLE_CHECKPOINT.md 10 lines; marker.
+
+DO:
+1) ls -la key artifacts; write SESSION_PACK.md
+2) Update STABLE_CHECKPOINT.md with session pack path + decoy status
+3) echo E18_SESSION_PACK_OK
+
+DONE when: both mds updated + marker.
+DO NOT: train, gdrive, redefine BEST.

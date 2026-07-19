@@ -1,0 +1,18 @@
+ACT. NO ESSAYS. Tools only. One marker. STOP.
+requires_approval=false. BEST frozen. No train. No gdrive.
+
+ENV:
+- GGUF: /data/NEXUS/workspace/export/product_8gb/gguf/
+- llama-cli candidates: /data/NEXUS/tools/llama.cpp/build/bin/llama-cli
+- Audit out: /data/NEXUS/workspace/GGUF_TEMPLATE_AUDIT.md  (≤40 lines)
+- Smoke out: /data/NEXUS/workspace/export/experiments/GGUF_SMOKE_ORCH.txt
+
+MISSION E3: template note + smoke non-empty if binary exists.
+
+DO:
+1) ls -lah /data/NEXUS/workspace/export/product_8gb/gguf/
+2) Write GGUF_TEMPLATE_AUDIT.md (template/stop/rope only, short)
+3) If llama-cli exists: one short gen teed to GGUF_SMOKE_ORCH.txt; else write SKIP reason into smoke file
+4) echo GGUF_SMOKE_OK if smoke file non-empty else echo GGUF_SMOKE_PARTIAL
+
+STOP.

@@ -44,3 +44,9 @@ See `docs/` for automation policy (calm single-burst CDP, no thrash).
 - After push, on A100: `bash scripts/pull_and_stage.sh`
 - Laptop OCR helpers under `local_ocr/` (optional; not for A100 GPU hours)
 - Latest narrative: `reports/session4/SESSION_LATEST.md`
+
+### Session 2026-07-19 (A100 NEXUS-GPU-test3)
+
+- Boot/portable last-session pack: `reports/session_20260719/`
+- Clean-sheet for next VM: `docs/CLEAN_SHEET_BOOT_20260719.md`
+- **Boundary:** Discovery GPU work stays in **this** repo — not the local NEXUS OS monorepo.

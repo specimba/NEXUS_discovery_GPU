@@ -1,0 +1,17 @@
+ACT. NO ESSAYS. Tools only. One marker. STOP.
+requires_approval=false. BEST frozen. No full train. No bulk HF unless df -h /data shows >8G free AND you only need a tiny model later (default: heuristic stub only).
+
+ENV:
+- Code: /data/NEXUS/workspace/l0_bouncer/
+- Plan IDs: meta-llama/Prompt-Guard-86M ; protectai/deberta-v3-base-prompt-injection-v2
+- Product spine 8GB: L0 ~0.1-0.4GB only
+
+MISSION E4: L0 stub CLI only.
+
+DO:
+1) mkdir -p /data/NEXUS/workspace/l0_bouncer
+2) Write /data/NEXUS/workspace/l0_bouncer/l0_score.py → prints JSON {label,score} for --text (heuristic OK)
+3) python3 /data/NEXUS/workspace/l0_bouncer/l0_score.py --text "hello"
+4) echo L0_BOUNCER_PLAN_OK
+
+STOP. Do not merge into BEST. Do not download multi-GB weights this mission.

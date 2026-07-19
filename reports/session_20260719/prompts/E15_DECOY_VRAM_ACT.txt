@@ -1,0 +1,18 @@
+ACT. NO ESSAYS. Tools only. One marker. STOP.
+requires_approval=false. BEST frozen. No train.
+
+ENV:
+- Root: /data/NEXUS
+- tools: /data/NEXUS/tools/ or /data/NEXUS/workspace/tools/
+- decoy: nexus_decoy_worker
+
+MISSION E15 decoy+VRAM pulse: prove decoy alive; if missing restart; log nvidia-smi or free; write DECOY_VRAM_PULSE.md; marker.
+
+DO:
+1) pgrep -af nexus_decoy; if missing start known decoy loop (96MiB/15s) or python worker
+2) nvidia-smi --query-gpu=memory.used,utilization.gpu --format=csv 2>/dev/null || free -h
+3) Write /data/NEXUS/workspace/DECOY_VRAM_PULSE.md with pid+mem+ts
+4) echo E15_DECOY_VRAM_OK
+
+DONE when: md exists + decoy pgrep non-empty + marker.
+DO NOT: kill other jobs, train, touch BEST.

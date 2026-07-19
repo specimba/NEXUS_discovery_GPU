@@ -1,0 +1,17 @@
+ACT. NO ESSAYS. Tools only. One marker. STOP.
+requires_approval=false. BEST frozen. No train.
+
+ENV:
+- Workspace: /data/NEXUS/workspace
+- Cascade: L0 → Guard → router → ONE L2 (law)
+
+MISSION E12 guard stub: add thin guard between L0 and router if missing; update cascade note; marker.
+
+DO:
+1) If workspace/guard_stub.py missing: write ≤40-line heuristic guard (pass/reject string, no model load)
+2) Append 5 lines to PHASE_C_CASCADE_NOTE.md documenting Guard role
+3) One shell: python3 -c import guard_stub ok
+4) echo E12_GUARD_STUB_OK
+
+DONE when: guard_stub.py importable + marker.
+DO NOT: implement full RL, train, multi-L2 soup.

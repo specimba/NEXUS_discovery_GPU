@@ -1,0 +1,24 @@
+ACT. NO ESSAYS. Tools only. One marker. STOP.
+requires_approval=false. BEST frozen. No train. No gdrive thrash. No delete of BEST.
+
+ENV:
+- Root: /data/NEXUS
+- Workspace: /data/NEXUS/workspace
+- Portable out: /data/NEXUS/workspace/portables/session_20260719/
+
+MISSION E19 last-session portable backup: pack small code/docs only (NOT multi-GB weights unless <200MB each); write MANIFEST; marker.
+
+DO (order):
+1) mkdir -p /data/NEXUS/workspace/portables/session_20260719/{docs,code,bench,cascade,meta}
+2) Copy if exist (cp -a or rsync -a --ignore-missing):
+   - STABLE_CHECKPOINT.md POST_REBOOT_DISK_TRUTH.md PRODUCT_SPINE_INVENTORY.md PRODUCT_SCORE.md
+   - CASCADE_DRY_RUN.md CASCADE_WIRE_RUN.md HONEST_SCOREBOARD.md SESSION_PACK.md NEXT_6H_PLAN.md PHASE_C_CASCADE_NOTE.md KILO_FULL_VERIFY.md
+   - router_stub.py guard_stub.py cascade_wire.py l0_bouncer/l0_score.py bench/run_batch.py
+   - any *.md under workspace root <500k
+3) Write portables/session_20260719/MANIFEST.md: ts UTC, hostname, file list with bytes, sha256sum of each file (sha256sum or openssl dgst)
+4) tar czf /data/NEXUS/workspace/portables/NEXUS_DISCOVERY_SESSION_20260719.tar.gz -C /data/NEXUS/workspace/portables session_20260719
+5) ls -la tar + du -sh pack; print path
+6) echo E19_PORTABLE_BACKUP_OK
+
+DONE when: tarball exists + MANIFEST + marker.
+DO NOT: pack full GGUF/bnb multi-GB unless single file <200MB and essential; never touch BEST weights delete; no train.

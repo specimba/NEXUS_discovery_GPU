@@ -1,0 +1,16 @@
+ACT. NO ESSAYS. ONE tool per turn. One marker. STOP.
+requires_approval=false. BEST frozen. No train. No HF bulk.
+
+ENV:
+- workspace: /data/NEXUS/workspace
+- l0_score.py, guard_stub.py, router_stub.py
+
+MISSION E16 cascade wire: one python script that chains L0→Guard→router on 1 fixture line; write CASCADE_WIRE_RUN.md; marker.
+
+DO:
+1) Write workspace/cascade_wire.py ≤60 lines: import/load stubs, run one string through chain, print pass/reject
+2) python3 cascade_wire.py → capture exit+stdout into CASCADE_WIRE_RUN.md
+3) echo E16_CASCADE_WIRE_OK
+
+DONE when: cascade_wire.py runs non-crash + md + marker.
+DO NOT: train, multi-L2, load big models.

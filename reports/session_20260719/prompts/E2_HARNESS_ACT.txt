@@ -1,0 +1,22 @@
+ACT. NO ESSAYS. ONE complete tool per turn only. One marker. STOP.
+Every execute_command MUST include requires_approval=false (full field, never omit).
+If prior turn was Invalid API Response: re-emit THE SAME single tool only — no essay.
+Prefer read_file / write_to_file over shell for file edits. BEST frozen. No train. No gdrive.
+
+ENV:
+- Workspace: /data/NEXUS/workspace
+- run_batch: /data/NEXUS/workspace/bench/run_batch.py
+- scenarios: /data/NEXUS/workspace/bench/scenarios/
+- runs out: /data/NEXUS/workspace/bench/runs/
+- scores note: /data/NEXUS/workspace/PRODUCT_SCORE.md
+
+MISSION E2: expand harness; one real run folder; marker.
+
+DO (one tool at a time, in order):
+1) read_file /data/NEXUS/workspace/bench/run_batch.py
+2) read_file /data/NEXUS/workspace/bench/scenarios/README.md
+3) write_to_file expand run_batch.py: load scenarios, write runs/<ts>/summary.json (stub scores OK)
+4) execute_command requires_approval=false: python3 /data/NEXUS/workspace/bench/run_batch.py
+5) execute_command requires_approval=false: echo STEP_2_OK
+
+STOP. No GGUF re-quant. No L0 download. No train.
